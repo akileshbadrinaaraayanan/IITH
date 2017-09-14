@@ -1,0 +1,7 @@
+Akilesh B, CS13B1042
+
+This folder contains Assign6.R and the relevant datasets required for solving this classification problem. glm or generalized linear model or logistic regression in R is used to solve this problem. I am getting an accuracy of 91.2% using this approach. The ROC curve plot is saved as 'Rplots.pdf' once it's run.
+
+How to run?
+
+Rscript Assign6.R

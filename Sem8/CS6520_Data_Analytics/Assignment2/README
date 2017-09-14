@@ -1,0 +1,9 @@
+Akilesh B, CS13B1042
+
+This folder contains Assign2.R which is binomial logistic regression method to solve the given problem. Using this approach, I get an accuracy of 97% (2_output.txt contains the output when the R script is run)	
+
+ROC curve gets saved as 'Rplots.pdf'
+
+How to run?
+
+Rscript Assign2.R 

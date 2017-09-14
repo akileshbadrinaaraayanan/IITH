@@ -1,0 +1,9 @@
+Akilesh B, CS13B1042
+
+This folder contains Assign1_final.R which is PCA+k-means based approach to cluster the given NIPS dataset. It also contains my attempt Assign1_kmeans_attempt.R which is my first try using k-means 
+
+'RPlots.pdf' gets generated when Assign1_final.R is run.
+
+How to run?
+
+Rscript Assign1_final.R

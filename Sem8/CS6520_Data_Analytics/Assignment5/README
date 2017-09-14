@@ -1,0 +1,7 @@
+Akilesh B, CS13B1042
+
+This assignment contains: Assign5_knn.R and Assign5_logistic_regression.R 
+
+Assign5_knn.R is the k-nearest neighbor approach to solve the classification problem with which I am getting 77% accuracy. On the other hand, Assign5_logistic_regression.R contains logistic regression approach to solve the classification problem with which I get 51.33% accuracy. Hence, k nearest neighbor approach works better.
+
+

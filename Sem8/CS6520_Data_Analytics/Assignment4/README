@@ -1,0 +1,7 @@
+Akilesh B, CS13B1042
+
+This folder contains Assign4.R which is a linear regression approach to solve the problem. I am getting an R Square value of 0.61 and MSE of 1.03 (4_output.txt contains the output when run)
+
+How To run?
+
+Rscript Assign4.R 

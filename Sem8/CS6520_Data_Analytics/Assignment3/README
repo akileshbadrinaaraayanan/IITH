@@ -1,0 +1,8 @@
+Akilesh B, CS13B1042
+
+This folder contains Assign3.R which is a linear regression approach to solve the given problem. Using this approach, I get a R Square of 0.79 and MSE of 3.82 (3_output.txt contains the output when the R file is run)
+
+How to run?
+
+Rscript Assign3.R 
+

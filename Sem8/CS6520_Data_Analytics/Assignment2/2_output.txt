@@ -1,0 +1,37 @@
+Call:
+glm(formula = V11 ~ V2 + V3 + V4 + V5 + V6 + V7 + V8 + V9 + V10, 
+    family = binomial, data = train)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-3.4761  -0.1217  -0.0682   0.0235   2.4589  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -10.026808   1.243886  -8.061 7.58e-16 ***
+V2            0.538591   0.150714   3.574 0.000352 ***
+V3            0.002983   0.206373   0.014 0.988467    
+V4            0.249248   0.233618   1.067 0.286015    
+V5            0.326314   0.125067   2.609 0.009078 ** 
+V6            0.090798   0.162711   0.558 0.576820    
+V7            0.352217   0.093885   3.752 0.000176 ***
+V8            0.539756   0.173556   3.110 0.001871 ** 
+V9            0.172816   0.112336   1.538 0.123953    
+V10           0.563736   0.519917   1.084 0.278240    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 721.781  on 558  degrees of freedom
+Residual deviance:  96.984  on 549  degrees of freedom
+AIC: 116.98
+
+Number of Fisher Scoring iterations: 8
+
+[1] "Accuracy 0.971428571428571"
+   
+    FALSE TRUE
+  0   355   10
+  1     9  185
+

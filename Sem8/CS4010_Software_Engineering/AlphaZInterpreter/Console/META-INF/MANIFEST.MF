@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Console
+Bundle-SymbolicName: Console;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui,
+ org.eclipse.ui.console;bundle-version="3.6.200",
+ org.polymodel.polyhedralIR,
+ edu.csu.melange.alphaz.mde,
+ edu.csu.melange.alphaz.commands.scripts.mde;bundle-version="1.0.0",
+ org.polymodel.polyhedralIR.codegen
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

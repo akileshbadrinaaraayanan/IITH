@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="ASCII"?>
+<commandIF:Category xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commandIF="http://alphaz/commandIF" name="alphaz">
+  <subcategories name="MDE">
+    <subcategories name="Basic" description="Commands for basic operations such as reading alphabets files and printing out different views of the program." commandPrefix="">
+      <commands description="Outputs the program to the specified file with array syntax.&#xA;When filename is not specified, saves as &quot;original_filename-ASave.ab&quot;." name="ASave">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.0/@commands.0/@inputs.0"/>
+        <inputs name="program" defaultValue=""/>
+        <inputs type="String" name="filename" defaultValue="program.getFilename()+&quot;-ASave.ab&quot;"/>
+      </commands>
+      <commands description="Outputs the result of AShow to the specified file.&#xA;When filename is not specified, saves as &quot;original_filename-ASave.ab&quot;." name="ASaveSystem">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.0/@commands.1/@inputs.0 //@subcategories.0/@subcategories.0/@commands.1/@inputs.1"/>
+        <inputs name="program" defaultValue=""/>
+        <inputs type="String" name="system" defaultValue="null"/>
+        <inputs type="String" name="filename" defaultValue="program.getFilename()+&quot;-ASave.ab&quot;"/>
+      </commands>
+      <commands description="Prints out the program using array notation.&#xA;Prints out the entire program when target system is unspecified.&#xA;" name="AShow" output="String">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.0/@commands.2/@inputs.0"/>
+        <inputs name="program" defaultValue="program.getFilename()+&quot;-Save.ab&quot;"/>
+        <inputs type="String" name="system" defaultValue="null"/>
+      </commands>
+      <commands description="Saves the output of show to the specified file.&#xA;When output filename is unspecified, saves to &quot;original_filename-Show.ab&quot;." name="Save">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.0/@commands.3/@inputs.0"/>
+        <inputs name="program" defaultValue=""/>
+        <inputs type="String" name="filename" defaultValue="program.getFilename()+&quot;-Save.ab&quot;"/>
+      </commands>
+      <commands description="Saves the output of show to the specified file.&#xA;When output filename is unspecified, saves to &quot;original_filename-Show.ab&quot;." name="SaveSystem">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.0/@commands.4/@inputs.0 //@subcategories.0/@subcategories.0/@commands.4/@inputs.1"/>
+        <inputs name="program" defaultValue=""/>
+        <inputs type="String" name="system" defaultValue="null"/>
+        <inputs type="String" name="filename" defaultValue="program.getFilename()+&quot;-Save.ab&quot;"/>
+      </commands>
+      <commands description="Pretty prints the program using alpha-purist syntax.&#xA;Prints out the entire program when target system is unspecified." name="Show" output="String">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.0/@commands.5/@inputs.0"/>
+        <inputs name="program" defaultValue="program.getFilename()+&quot;-Save.ab&quot;"/>
+        <inputs type="String" name="system" defaultValue="null"/>
+      </commands>
+      <commands description="Normalizes the program. Normalization rules are described in more detail at: \url{http://www.cs.colostate.edu/AlphaZ/wiki/doku.php?id=normalize}." name="Normalize">
+        <inputs name="program" defaultValue="program.getFilename()+&quot;-Save.ab&quot;"/>
+      </commands>
+      <commands description="Prints out the AST of the program.&#xA;Prints out the entire program when target system is unspecified." name="PrintAST" output="String">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.0/@commands.7/@inputs.0"/>
+        <inputs name="program" defaultValue="program.getFilename()+&quot;-Save.ab&quot;"/>
+        <inputs type="String" name="system" defaultValue="null"/>
+      </commands>
+      <commands description="Parses the given alphabets program and returns a Program object." name="ReadAlphabets" output="Program">
+        <inputs type="String" name="file" defaultValue=""/>
+      </commands>
+      <commands description="Renames an AffineSystem." name="RenameSystem">
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="String" name="newSystemName"/>
+      </commands>
+      <commands description="Renames a variable." name="RenameVariable">
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="String" name="varName"/>
+        <inputs type="String" name="newVarName"/>
+      </commands>
+      <commands description="Removes unused variables and equations. Unused variables are variables that is not used by the definition of output." name="RemoveUnusedVariables">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.0/@commands.11/@inputs.0"/>
+        <inputs name="program"/>
+        <inputs type="String" name="system" defaultValue="null"/>
+      </commands>
+    </subcategories>
+    <subcategories name="Transformation" description="Transformations are commands that modify the program in some way.">
+      <subcategories name="Reduction" description="Transformations involving reduce expressions." commandPrefix="">
+        <commands description="Takes case expression inside reductions out side of the reduction.&#xA;This transformation can be applied to three different targets, &#xA;the entire program, an affine system, or an equation." name="PermutationCaseReduce">
+          <overloads xsi:type="commandIF:SpecializedOverloading" overLoadedInputs="//@subcategories.0/@subcategories.1/@subcategories.0/@commands.0/@inputs.0"/>
+          <overloads xsi:type="commandIF:SpecializedOverloading" overLoadedInputs="//@subcategories.0/@subcategories.1/@subcategories.0/@commands.0/@inputs.0 //@subcategories.0/@subcategories.1/@subcategories.0/@commands.0/@inputs.1"/>
+          <inputs name="program"/>
+          <inputs type="String" name="systemName"/>
+          <inputs type="String" name="targetVar"/>
+        </commands>
+        <commands description="Decomposes a reduction spanning more than one dimensions to two reductions.&#xA;Function f1 composed with f2 should match the original projection function.&#xA;&#xA;The target reduction is specified as the n-th occurrence in the rhs of an equation indexed from 0." name="ReductionDecomposition">
+          <inputs name="program"/>
+          <inputs type="String" name="nodeID"/>
+          <inputs type="String" name="f1"/>
+          <inputs type="String" name="f2"/>
+        </commands>
+        <commands description="Simplifies the specified reduction using the reuse specified. It does not check if the given reuse is correct." name="SimplifyingReduction">
+          <overloads xsi:type="commandIF:SpecializedOverloading" overLoadedInputs="//@subcategories.0/@subcategories.1/@subcategories.0/@commands.2/@inputs.0">
+            <additionalInputs type="String" name="nodeID"/>
+            <additionalInputs type="String" name="reuseVector"/>
+          </overloads>
+          <inputs name="program"/>
+          <inputs type="String" name="system" defaultValue=""/>
+          <inputs type="String" name="varName"/>
+          <inputs type="String" name="reuseVector"/>
+        </commands>
+        <commands description="Transforms reductions specified into normal form.&#xA;The normal form of a reduction is when a reduce expression is the direct child of an equation." name="NormalizeReduction">
+          <overloads overLoadedInputs="//@subcategories.0/@subcategories.1/@subcategories.0/@commands.3/@inputs.0"/>
+          <overloads xsi:type="commandIF:SpecializedOverloading" overLoadedInputs="//@subcategories.0/@subcategories.1/@subcategories.0/@commands.3/@inputs.0">
+            <additionalInputs type="String" name="system"/>
+            <additionalInputs type="String" name="equationName"/>
+          </overloads>
+          <inputs name="program"/>
+          <inputs type="String" name="nodeID" defaultValue="null"/>
+        </commands>
+        <commands description="Factors out an operand of point-wise operations (specified with nodeID) from the reduction body.&#xA;It checks if the operator is distributive over the reduction operator, but does not verify that the given expression is constant in context." name="FactorOutFromReduction">
+          <inputs name="program"/>
+          <inputs type="String" name="nodeID"/>
+        </commands>
+        <commands description="Takes a nodeID of a reduce expression, reduce(op, f, expr), and transform it in to two reductions;&#xA;reduce(op, f, D1 : expr) op reduce(op, f, D2 : expr) where D1 is the splitDomain, and D2 is the difference between the original expression domain of the reduction body and the splitDomain." name="SplitReductionBody">
+          <inputs name="program"/>
+          <inputs type="String" name="nodeID"/>
+          <inputs type="String" name="splitDomain" defaultValue=""/>
+        </commands>
+        <commands description="Given reduce expression, reduce(op, f, expr), transforms the reduction to reduce(op, f, image(Dexpr, T) : Tinv@expr).&#xA;The domain is transformed to the image by T, and specified as restrict. All variable accesses are composed with the inverse of T, so that other variables are unchanged." name="TransformReductionBody">
+          <inputs name="program"/>
+          <inputs type="String" name="nodeID"/>
+          <inputs type="String" name="T"/>
+        </commands>
+        <commands description="Serializes a reduction using the dependencies inferred from the given schedule." name="SerializeReduction">
+          <overloads xsi:type="commandIF:SpecializedOverloading" overLoadedInputs="//@subcategories.0/@subcategories.1/@subcategories.0/@commands.7/@inputs.0">
+            <additionalInputs type="String" name="system" defaultValue=""/>
+            <additionalInputs type="String" name="var"/>
+            <additionalInputs type="String" name="schedule"/>
+          </overloads>
+          <inputs name="program"/>
+          <inputs type="String" name="nodeID"/>
+          <inputs type="String" name="schedule"/>
+        </commands>
+        <commands description="Merges two reductions combined by a binary operator into one reduction (with case branches) if possible.&#xA;It is possible if all the operators are the same and the projection functions matches." name="MergeReductions">
+          <inputs name="program"/>
+          <inputs type="String" name="nodeID"/>
+        </commands>
+        <commands description="Composes the given reduction (represented by the nodeID) with its immediate child assuming that it is also a reduction with the same operator. this transformation implements the following reduce(op, f1, reduce(op, f2, body)); => reduce(op, f1 o f2, body); and is the reverse of ReductionDecomposition. Added support for the case when there is a restrict expression surrounding the inner reduction." name="ReductionComposition">
+          <inputs name="program"/>
+          <inputs type="String" name="nodeID"/>
+        </commands>
+      </subcategories>
+      <subcategories name="MonoparametricTiling" description="Commands which parametrize the monoparametric tiling transformation, plus the transformation itself">
+        <commands description="Perform a monoparametric tiling transformation without outlining (the result is a single system in which all the dimensions are doubled).&#xA;By default, the ratio taken is 1^k (square), the minimum values of the blocked parameters are 0&#xA;    and each variables of the system are tiled independently, with no change of basis as a preprocessing." name="monoparametricTiling_noOutlining">
+          <inputs name="prog"/>
+          <inputs type="String" name="systName"/>
+          <inputs type="String" name="nameBlockSizeParam"/>
+          <inputs type="Boolean" name="areParamDivisible"/>
+          <inputs type="int" name="minblSizeParam"/>
+        </commands>
+        <commands description="Perform a monoparametric tiling transformation without outlining (the result is a single system in which all the dimensions are doubled).&#xA;By default, the ratio taken is 1^k (square), the minimum values of the blocked parameters are 0&#xA;    and each variables of the system are tiled independently, with no change of basis as a preprocessing.&#xA;&#xA;The equations of the produced system are double-nested case expression, the first level corresponding to the constraints on the blocked indices&#xA;    and the second level to the constraints on the local indices." name="monoparametricTiling_Outlining_noSubsystem">
+          <inputs name="prog"/>
+          <inputs type="String" name="systName"/>
+          <inputs type="String" name="nameBlockSizeParam"/>
+          <inputs type="Boolean" name="areParamDivisible"/>
+          <inputs type="int" name="minblSizeParam"/>
+        </commands>
+        <commands description="Perform a monoparametric tiling transformation with outlining (produces a subsystem for each kind of tiles in the program).&#xA;By default, the ratio taken is 1^k (square), the minimum values of the blocked parameters are 0&#xA;    and each variables of the system are tiled independently, with no change of basis as a preprocessing." name="monoparametricTiling_Outlining">
+          <inputs name="prog"/>
+          <inputs type="String" name="systName"/>
+          <inputs type="String" name="nameBlockSizeParam"/>
+          <inputs type="Boolean" name="areParamDivisible"/>
+          <inputs type="int" name="minblSizeParam"/>
+        </commands>
+        <commands description="Specify the ratio of a variable, before the tiling transformation. The default ratio taken for a variable is 1^k (square ratio)" name="setRatio">
+          <inputs name="prog"/>
+          <inputs type="String" name="syst"/>
+          <inputs type="String" name="varName"/>
+          <inputs type="String" name="lRatios"/>
+        </commands>
+        <commands description="Set the minimum blocked parameter values, before the tiling transformation.&#xA;The default value is &quot;0&quot; for every parameters." name="setMinParamValues">
+          <inputs name="prog"/>
+          <inputs type="String" name="syst"/>
+          <inputs type="String" name="paramName"/>
+          <inputs type="int" name="minValue"/>
+        </commands>
+        <commands description="Set the tile group of a variable (through a common name), before a tiling.&#xA;By default, each variable is alone in its tile group (which has the same name than the variable name)" name="setTileGroup">
+          <inputs name="prog"/>
+          <inputs type="String" name="syst"/>
+          <inputs type="String" name="varName"/>
+          <inputs type="String" name="tileGroupName"/>
+        </commands>
+        <commands description="Set the Change of Basis transformation that need to be performed before tiling (usually to make the rectangular tiling legal).&#xA;By default, this function is Id (i.e., no CoB is performed before the tiling)" name="setCoBPreprocess">
+          <inputs name="prog"/>
+          <inputs type="String" name="syst"/>
+          <inputs type="String" name="varName"/>
+          <inputs type="String" name="cobAffFunc"/>
+        </commands>
+      </subcategories>
+      <commands description="Change of Basis transforms the domain of a variable to the image by the given function, while adding necessary dependence expressions to maintain the original semantics of the program. Details can be found at \url{http://www.cs.colostate.edu/AlphaZ/wiki/doku.php?id=change_of_basis}." name="CoB">
+        <overloads xsi:type="commandIF:SpecializedOverloading" overLoadedInputs="//@subcategories.0/@subcategories.1/@commands.0/@inputs.0 //@subcategories.0/@subcategories.1/@commands.0/@inputs.1 //@subcategories.0/@subcategories.1/@commands.0/@inputs.2">
+          <additionalInputs type="String" name="function" defaultValue=""/>
+        </overloads>
+        <inputs name="program"/>
+        <inputs type="String" name="systemName"/>
+        <inputs type="String" name="varName"/>
+        <inputs type="AffineFunction" name="function"/>
+      </commands>
+      <commands description="Force the change of basis even if the CoB is for input/output of a system." name="ForceCoB">
+        <overloads xsi:type="commandIF:SpecializedOverloading" overLoadedInputs="//@subcategories.0/@subcategories.1/@commands.1/@inputs.0 //@subcategories.0/@subcategories.1/@commands.1/@inputs.1 //@subcategories.0/@subcategories.1/@commands.1/@inputs.2">
+          <additionalInputs type="String" name="function"/>
+        </overloads>
+        <inputs name="program"/>
+        <inputs type="String" name="systemName"/>
+        <inputs type="String" name="targetName"/>
+        <inputs type="AffineFunction" name="function"/>
+      </commands>
+      <commands description="Splits a variable into two, where the domain of two variables are disjoint and union of them is equivalent to the original domain of the variable.&#xA;If newName is not given, it creates a variable with prefix &quot;_split&quot; appended to the original name." name="Split">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.1/@commands.2/@inputs.0 //@subcategories.0/@subcategories.1/@commands.2/@inputs.1 //@subcategories.0/@subcategories.1/@commands.2/@inputs.2 //@subcategories.0/@subcategories.1/@commands.2/@inputs.4"/>
+        <inputs name="program"/>
+        <inputs type="String" name="systemName"/>
+        <inputs type="String" name="varName"/>
+        <inputs type="String" name="newName" defaultValue="null"/>
+        <inputs type="String" name="sepDomain"/>
+      </commands>
+      <commands description="Merge two variables (of name var1Name and var2Name) into a single one.&#xA;These variables must both be locals and must have disjoint domains. The name of the merge of these two variables is &quot;newName&quot;." name="Merge">
+        <inputs name="program"/>
+        <inputs type="String" name="systemName"/>
+        <inputs type="String" name="var1Name"/>
+        <inputs type="String" name="var2Name"/>
+        <inputs type="String" name="newName"/>
+      </commands>
+      <commands description="Inlines the nth(number) reference to inlineEq in the definition of targetEq once. If the number is not specified, all references to inlineEq are inlined." name="Inline">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.1/@commands.4/@inputs.0 //@subcategories.0/@subcategories.1/@commands.4/@inputs.1 //@subcategories.0/@subcategories.1/@commands.4/@inputs.2 //@subcategories.0/@subcategories.1/@commands.4/@inputs.3"/>
+        <inputs name="program"/>
+        <inputs type="String" name="systemName"/>
+        <inputs type="String" name="targetEq"/>
+        <inputs type="String" name="inlineEq"/>
+        <inputs type="int" name="number" defaultValue="1"/>
+      </commands>
+      <commands description="Simplifies the program in multiple ways. The domains are simplified by simplifyInContext (a.k.a. gist). When the domain of a reduction body is a single point, reduction is removed." name="Simplify">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.1/@commands.5/@inputs.0"/>
+        <inputs name="prog"/>
+        <inputs type="String" name="system" defaultValue="null"/>
+      </commands>
+      <commands description="Takes an alphabetes program and converts it to a program that computes the fastest possible schedule (free shcedule).&#xA;This transformation DOES NOT preserve the original semantics, but instead creates a new Program object.&#xA;&#xA;Implemented by Alex Klein as a class project in cs560@spring11" name="createFreeScheduler" output="Program">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.1/@commands.6/@inputs.0"/>
+        <inputs name="program"/>
+        <inputs type="String" name="newProgPrefix" defaultValue="&quot;&quot;"/>
+      </commands>
+      <commands description="Replace an expression that has unions of polyhedra as its context domain with a case expression that splits the union into multiple disjiont polyhedra." name="SplitUnion">
+        <inputs name="prog"/>
+        <inputs type="String" name="nodeID" defaultValue="null"/>
+      </commands>
+      <commands description="Applies sequence of CoBs using STMap given for each variable.&#xA;This is identical to the pre-processing step of ScheduledC code generator, where all variables are mapped to a common space so that ordering of iterations can be defined.&#xA;Assumes correct schedule [TODO:run verifier before applying the transformation once the verifier is fixed]&#xA;All STMaps and MemoryMaps given for the system will also be transformed appropriately." name="ApplySTMap">
+        <inputs name="program"/>
+        <inputs type="String" name="systemName"/>
+      </commands>
+      <commands description="Attempts to uniformize all dependencies when possible." name="UniformizeInContext">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.1/@commands.9/@inputs.0"/>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.1/@commands.9/@inputs.0 //@subcategories.0/@subcategories.1/@commands.9/@inputs.1"/>
+        <inputs name="prog"/>
+        <inputs type="String" name="system" defaultValue="null"/>
+        <inputs type="int" name="excludeInputs" defaultValue="1"/>
+      </commands>
+      <commands description="Force the inline action even if there is a self loop dependence" name="InlineForce">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.1/@commands.10/@inputs.0 //@subcategories.0/@subcategories.1/@commands.10/@inputs.1 //@subcategories.0/@subcategories.1/@commands.10/@inputs.2 //@subcategories.0/@subcategories.1/@commands.10/@inputs.3"/>
+        <inputs name="program"/>
+        <inputs type="String" name="systemName"/>
+        <inputs type="String" name="targetEq"/>
+        <inputs type="String" name="inlineEq"/>
+        <inputs type="int" name="number" defaultValue="1"/>
+      </commands>
+      <commands description="Inline all the possible equation in a system when there is no self loop dependence" name="InlineAll">
+        <inputs name="program"/>
+        <inputs type="String" name="systemName"/>
+        <inputs type="String" name="inlineEq"/>
+      </commands>
+      <commands description="Inline all the possible equations in a system even with self loop dependence once" name="InlineAllForce">
+        <inputs name="program"/>
+        <inputs type="String" name="systemName"/>
+        <inputs type="String" name="inlineEq"/>
+      </commands>
+      <commands description="Inline the subsystem used by the UseEquation specified by nodeID" name="InlineSubSystem">
+        <inputs name="program"/>
+        <inputs type="String" name="systemName"/>
+        <inputs type="String" name="label"/>
+      </commands>
+      <commands description="Outline a list of equations of a given system. These equation are defined through a list of variable (&quot;listEquations&quot;) that corresponds to the variable of a StandardEquation or to the output of a UseEquation.&#xA;[V1] The created use equation will have no extension domain, and only variable expressions as inputs." name="OutlineSubSystem">
+        <inputs name="program"/>
+        <inputs type="String" name="system" defaultValue=""/>
+        <inputs type="String" name="listEquations"/>
+      </commands>
+      <commands description="Adds a local variable (of name specified by &quot;nameLocal&quot;) for the expression &quot;expr&quot; and replace each occurrence of this expression in the considered system.&#xA;&quot;expr&quot; can be specified through a expression of the system (located in &quot;nodeID&quot;), or through an external expression &quot;expr&quot; whose list of indexes is &quot;lInds&quot;." name="AddLocal">
+        <overloads xsi:type="commandIF:SpecializedOverloading" overLoadedInputs="//@subcategories.0/@subcategories.1/@commands.15/@inputs.0 //@subcategories.0/@subcategories.1/@commands.15/@inputs.1 //@subcategories.0/@subcategories.1/@commands.15/@inputs.2">
+          <additionalInputs type="String" name="expr"/>
+          <additionalInputs type="String" name="lInds"/>
+        </overloads>
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="String" name="nameLocal"/>
+        <inputs type="String" name="nodeID"/>
+      </commands>
+      <commands description="Replace only the expression (specified by the location &quot;nodeID&quot;) by a new local variable (of name &quot;nameLocal&quot;)." name="AddLocalUnique">
+        <inputs name="program" defaultValue=""/>
+        <inputs type="String" name="system"/>
+        <inputs type="String" name="nameLocal"/>
+        <inputs type="String" name="nodeID"/>
+      </commands>
+      <commands description="Detects simple reductions in the program and exposes as reduce expressions." name="DetectReductions">
+        <inputs name="prog"/>
+        <inputs type="String" name="system"/>
+      </commands>
+      <commands description="Use the equalities of the domain of the specified variable in order to reduce its number of dimension.&#xA;Perform the corresponding change of basis and return the affine function used in this CoB." name="reduceDimVariable" output="AffineFunction">
+        <inputs name="prog"/>
+        <inputs type="String" name="syst"/>
+        <inputs type="String" name="varName"/>
+      </commands>
+      <commands description="Align the bounding box of the domain of a variable with the point \vec{0}, by using a translation.&#xA;Note: might not work if the lower bound is not an affine function&#xA;Return the affine function used to perform the translation." name="alignDimVariable" output="AffineFunction">
+        <inputs name="prog"/>
+        <inputs type="String" name="syst"/>
+        <inputs type="String" name="varName"/>
+      </commands>
+    </subcategories>
+    <subcategories name="CodeGen" description="Code generators from alphabets to other languages.">
+      <commands description="Generates scheduledC code for a system using the TargetMapping specified for the system.&#xA;Detailed options can be given through optional argument." name="generateScheduledCode">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.0/@inputs.0 //@subcategories.0/@subcategories.2/@commands.0/@inputs.1 //@subcategories.0/@subcategories.2/@commands.0/@inputs.3"/>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.0/@inputs.0 //@subcategories.0/@subcategories.2/@commands.0/@inputs.1 //@subcategories.0/@subcategories.2/@commands.0/@inputs.3 //@subcategories.0/@subcategories.2/@commands.0/@inputs.4"/>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.0/@inputs.0 //@subcategories.0/@subcategories.2/@commands.0/@inputs.1"/>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.0/@inputs.0 //@subcategories.0/@subcategories.2/@commands.0/@inputs.1 //@subcategories.0/@subcategories.2/@commands.0/@inputs.4"/>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.0/@inputs.0 //@subcategories.0/@subcategories.2/@commands.0/@inputs.1 //@subcategories.0/@subcategories.2/@commands.0/@inputs.2 //@subcategories.0/@subcategories.2/@commands.0/@inputs.3"/>
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="CodeGenOptions" name="options" defaultValue="getDefaultCodeGenOptions(program, system)"/>
+        <inputs type="String" name="outDir" defaultValue="&quot;./&quot;"/>
+        <inputs type="Boolean" name="genVerifier" defaultValue="false"/>
+      </commands>
+      <commands description="Generates WriteC code for a system.&#xA;TargetMapping is ignored except for MemoryMapping given for output variables.&#xA;Detailed options can be given through optional argument." name="generateWriteC">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.1/@inputs.0 //@subcategories.0/@subcategories.2/@commands.1/@inputs.1 //@subcategories.0/@subcategories.2/@commands.1/@inputs.3"/>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.1/@inputs.0 //@subcategories.0/@subcategories.2/@commands.1/@inputs.1"/>
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="CodeGenOptions" name="options" defaultValue="CodeGenOptions.writeCDefault()"/>
+        <inputs type="String" name="outDir" defaultValue="&quot;./&quot;"/>
+      </commands>
+      <commands description="Generates a wrapper code for the given sytem using the specified TargetMapping." name="generateWrapper">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.2/@inputs.0 //@subcategories.0/@subcategories.2/@commands.2/@inputs.1 //@subcategories.0/@subcategories.2/@commands.2/@inputs.3"/>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.2/@inputs.0 //@subcategories.0/@subcategories.2/@commands.2/@inputs.1"/>
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="CodeGenOptions" name="options" defaultValue="getDefaultCodeGenOptions(program, system)"/>
+        <inputs type="String" name="outDir" defaultValue="&quot;./&quot;"/>
+      </commands>
+      <commands description="Generates code for verifying generated program. The code is generated using demand-driven code generator (WriteC)." name="generateVerificationCode">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.3/@inputs.0 //@subcategories.0/@subcategories.2/@commands.3/@inputs.1"/>
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="String" name="outDir" defaultValue="&quot;./&quot;"/>
+      </commands>
+      <commands description="Generates Makefile to compile generated code + wrapper." name="generateMakefile">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.4/@inputs.0 //@subcategories.0/@subcategories.2/@commands.4/@inputs.1"/>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.4/@inputs.0 //@subcategories.0/@subcategories.2/@commands.4/@inputs.1 //@subcategories.0/@subcategories.2/@commands.4/@inputs.3"/>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.4/@inputs.0 //@subcategories.0/@subcategories.2/@commands.4/@inputs.1 //@subcategories.0/@subcategories.2/@commands.4/@inputs.2"/>
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="CodeGenOptions" name="CodeGenOptions" defaultValue="null"/>
+        <inputs type="String" name="outDir" defaultValue="&quot;./&quot;"/>
+      </commands>
+      <commands userCommand="false" name="generateMakefileInternal">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.5/@inputs.0 //@subcategories.0/@subcategories.2/@commands.5/@inputs.1 //@subcategories.0/@subcategories.2/@commands.5/@inputs.3"/>
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="CodeGenOptions" name="CodeGenOptions" defaultValue="null"/>
+        <inputs type="String" name="outDir" defaultValue="&quot;./&quot;"/>
+      </commands>
+      <commands description="Creates instance of CodeGenOptions for WriteC using default values." name="createCGOptionForWriteC" output="CodeGenOptions"/>
+      <commands description="Creates instance of CodeGenOptions for ScheduledC using default values." name="createCGOptionForScheduledC" output="CodeGenOptions"/>
+      <commands description="Creates instance of CodeGenOptions for Hybrid ScheduledC for GPU using dimToInsertChecks to insert checks." name="createCGOptionForHybridScheduledCGPU" output="CodeGenOptions">
+        <inputs type="int" name="dimToInsertChecks"/>
+      </commands>
+      <commands description="Creates instance of CodeGenOptions for Hybrid ScheduledC using dimToInsertChecks to insert checks." name="createCGOptionForHybridScheduledC" output="CodeGenOptions">
+        <inputs type="int" name="dimToInsertChecks"/>
+      </commands>
+      <commands description="Specifies true/false (1/0) values for if the multi-dimensional arrays allocated should be flattened to 1D or not." name="setCGOptionFlattenArrays">
+        <inputs type="CodeGenOptions" name="CGoptions" defaultValue=""/>
+        <inputs type="int" name="flatten"/>
+      </commands>
+      <commands description="Options to skip Normalize before generating code with the ScheduleC code generator.&#xA;This is an option added as an workaround to scalability problems with Normalize, and will be removed in the future.&#xA;Not normalizing may lead to significantly inefficient code." name="setCGOptionDisableNormalize_depreciated">
+        <inputs type="CodeGenOptions" name="options"/>
+      </commands>
+      <commands description="Creates instance of CodeGenOptions for ScheduledC using default values for tiling." name="createTiledCGOptionForScheduledC" output="TiledCodeGenOptions"/>
+      <commands description="Creates instance of CodeGenOptions for PCOTC using default values for tiling." name="createCGOptionsForPCOT" output="TiledCodeGenOptions"/>
+      <commands description="Applies optimizations to the tiled code generated using full-tile splitting of a selected statement group.&#xA;Statement group is selected with heuristics that may not be accurate." name="setTiledCGOptionOptimize">
+        <inputs type="TiledCodeGenOptions" name="options"/>
+        <inputs type="int" name="optimize"/>
+      </commands>
+      <commands description="Returns CodeGenOptions appropriate for the given system." userCommand="false" name="getDefaultCodeGenOptions" output="CodeGenOptions">
+        <inputs name="prog"/>
+        <inputs type="String" name="system"/>
+      </commands>
+      <commands description="code generator for a scan subsystem ( a subsystem that contains only scan computations)" name="generateScanC">
+        <inputs name="program" defaultValue=""/>
+        <inputs type="String" name="systemName"/>
+        <inputs type="CodeGenOptions" name="options"/>
+        <inputs type="String" name="outDir" defaultValue="&quot;./&quot;"/>
+      </commands>
+      <commands description="CPU code generator for Polyhedral Cache Oblivious Tiling" name="generatePCOTCode">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.17/@inputs.0 //@subcategories.0/@subcategories.2/@commands.17/@inputs.1 //@subcategories.0/@subcategories.2/@commands.17/@inputs.3"/>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.17/@inputs.0 //@subcategories.0/@subcategories.2/@commands.17/@inputs.1 //@subcategories.0/@subcategories.2/@commands.17/@inputs.3 //@subcategories.0/@subcategories.2/@commands.17/@inputs.4"/>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.17/@inputs.0 //@subcategories.0/@subcategories.2/@commands.17/@inputs.1"/>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.17/@inputs.0 //@subcategories.0/@subcategories.2/@commands.17/@inputs.1 //@subcategories.0/@subcategories.2/@commands.17/@inputs.4"/>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.17/@inputs.0 //@subcategories.0/@subcategories.2/@commands.17/@inputs.1 //@subcategories.0/@subcategories.2/@commands.17/@inputs.2 //@subcategories.0/@subcategories.2/@commands.17/@inputs.3"/>
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="TiledCodeGenOptions" name="options" defaultValue="createCGOptionsForPCOT()"/>
+        <inputs type="String" name="outDir" defaultValue="&quot;./&quot;"/>
+        <inputs type="Boolean" name="genVerifier" defaultValue="false"/>
+      </commands>
+      <commands description="generate code using the flattened multi-pass tiling and parallelization strategy" name="generateFMPPCode">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.18/@inputs.0 //@subcategories.0/@subcategories.2/@commands.18/@inputs.1 //@subcategories.0/@subcategories.2/@commands.18/@inputs.2 //@subcategories.0/@subcategories.2/@commands.18/@inputs.4"/>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.18/@inputs.0 //@subcategories.0/@subcategories.2/@commands.18/@inputs.1 //@subcategories.0/@subcategories.2/@commands.18/@inputs.2"/>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.18/@inputs.0 //@subcategories.0/@subcategories.2/@commands.18/@inputs.1"/>
+        <inputs name="program"/>
+        <inputs type="String" name="systemName"/>
+        <inputs type="String" name="TilingType" defaultValue="&quot;sequential&quot;"/>
+        <inputs type="TiledCodeGenOptions" name="CodeGenOptions" defaultValue="TiledCodeGenOptions.scheduledCDefault()"/>
+        <inputs type="String" name="outDir" defaultValue="&quot;./&quot;"/>
+      </commands>
+      <commands description="Turn on the vectorization option for TiledC. Right now it is only open for DTiler -- Where only 1 level of tiling is applied and all dimensions are tiled.&#xA;Four types of vectorization strategy is supported: naive, opt nobuff -- optimized vectorization strategy without temporary buffering, all aligned -- optimized vectorization strategy with temporary buffering and all vectors aligned, mostly aligned -- optimized vectorization strategy with temporary buffering and mostly aligned strategy. The default strategy is set to be &quot;opt nobuff&quot;.&#xA;Register block size only corresponds to the data dimensions of stencil computations, the default register block size is set to unroll the innermost vectorized dimension 4 times. " name="setVecOptionForTiledC">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.19/@inputs.0"/>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.19/@inputs.0 //@subcategories.0/@subcategories.2/@commands.19/@inputs.2"/>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.19/@inputs.0 //@subcategories.0/@subcategories.2/@commands.19/@inputs.2 //@subcategories.0/@subcategories.2/@commands.19/@inputs.3"/>
+        <inputs type="TiledCodeGenOptions" name="options"/>
+        <inputs type="String" name="vecSet" defaultValue="&quot;AVX&quot;"/>
+        <inputs type="String" name="vecStrategy" defaultValue="&quot;opt nobuff&quot;"/>
+        <inputs type="String" name="registerBlockSize" defaultValue="&quot;&quot;"/>
+      </commands>
+      <commands description="Set the variables for vectorization. All the variable statement must occur under the same innermost loop nest. " name="setVecVarsForTiledC">
+        <inputs name="program"/>
+        <inputs type="String" name="systemName"/>
+        <inputs type="TiledCodeGenOptions" name="options"/>
+        <inputs type="String" name="vars"/>
+      </commands>
+      <commands name="setVecVarForTiledC">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.2/@commands.21/@inputs.0 //@subcategories.0/@subcategories.2/@commands.21/@inputs.1 //@subcategories.0/@subcategories.2/@commands.21/@inputs.2 //@subcategories.0/@subcategories.2/@commands.21/@inputs.3"/>
+        <inputs name="program"/>
+        <inputs type="String" name="systemName"/>
+        <inputs type="TiledCodeGenOptions" name="options"/>
+        <inputs type="String" name="var"/>
+        <inputs type="String" name="domain" defaultValue="&quot;&quot;"/>
+      </commands>
+      <commands description="Generates code with recursion depth as an input parameter." name="addRecursionDepthForPCOT" output="TiledCodeGenOptions">
+        <inputs type="TiledCodeGenOptions" name="options"/>
+      </commands>
+    </subcategories>
+    <subcategories name="Calculator" description="Calculator interface for directly manipulating polyhedral objects." commandPrefix="calc_">
+      <commands description="Reads domain in String and returns a Domain object." name="readDomain" output="Domain">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.3/@commands.0/@inputs.1"/>
+        <inputs type="Domain" name="paramDomain" defaultValue="PolyhedralIRUtility.createUniverseDomain(new ArrayList&lt;Variable>(0), new ArrayList&lt;Variable>(0))"/>
+        <inputs type="String" name="domain"/>
+      </commands>
+      <commands description="Reads affine function in String and returns an AffineFunction object." name="readFunction" output="AffineFunction">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.3/@commands.1/@inputs.1"/>
+        <inputs type="Domain" name="paramDomain" defaultValue="PolyhedralIRUtility.createUniverseDomain(new ArrayList&lt;Variable>(0), new ArrayList&lt;Variable>(0))"/>
+        <inputs type="String" name="function"/>
+      </commands>
+      <commands description="Compute the inverse of the give affine function." name="inverse" output="AffineFunction">
+        <inputs type="AffineFunction" name="function"/>
+      </commands>
+      <commands description="Computes inverse of the given affine function, in the context of the given domain." name="inverseInContext" output="AffineFunction">
+        <inputs type="Domain" name="domain"/>
+        <inputs type="AffineFunction" name="function"/>
+      </commands>
+      <commands description="Returns a function, that computes function2@function1." name="compose" output="AffineFunction">
+        <inputs type="AffineFunction" name="function1"/>
+        <inputs type="AffineFunction" name="function2"/>
+      </commands>
+      <commands description="Returns the intersection of two domains given." name="intersection" output="Domain">
+        <inputs type="Domain" name="domain1"/>
+        <inputs type="Domain" name="domain2"/>
+      </commands>
+      <commands description="Returns the union of two domains given." name="union" output="Domain">
+        <inputs type="Domain" name="domain1"/>
+        <inputs type="Domain" name="domain2"/>
+      </commands>
+      <commands description="Returns a function that computes function1@function2." name="join" output="AffineFunction">
+        <inputs type="AffineFunction" name="function1"/>
+        <inputs type="AffineFunction" name="function2"/>
+      </commands>
+      <commands description="Returns true if the domain is empty." name="isEmpty" output="Boolean">
+        <inputs type="Domain" name="domain"/>
+      </commands>
+      <commands description="Returns true if the two domains/functions given are equivalent." name="isEquivalent" output="Boolean">
+        <overloads xsi:type="commandIF:SpecializedOverloading">
+          <additionalInputs type="AffineFunction" name="funcA"/>
+          <additionalInputs type="AffineFunction" name="funcB"/>
+        </overloads>
+        <inputs type="Domain" name="domainA"/>
+        <inputs type="Domain" name="domainB"/>
+      </commands>
+      <commands description="Compute the image of the given domain by the given function." name="image" output="Domain">
+        <inputs type="AffineFunction" name="function"/>
+        <inputs type="Domain" name="domain"/>
+      </commands>
+      <commands description="Compute the pre-image of the given domain by the given function." name="preImage" output="Domain">
+        <inputs type="AffineFunction" name="function"/>
+        <inputs type="Domain" name="domain"/>
+      </commands>
+      <commands description="Returns domainA / domainB." name="difference" output="Domain">
+        <inputs type="Domain" name="domainA"/>
+        <inputs type="Domain" name="domainB"/>
+      </commands>
+      <commands description="Takes domain and context domain, and returns the domain with constraints that are redundant with the context removed." name="simplifyInContext" output="Domain">
+        <inputs type="Domain" name="domain" defaultValue=""/>
+        <inputs type="Domain" name="context" defaultValue=""/>
+      </commands>
+    </subcategories>
+    <subcategories name="Utility" description="Commands for mostly internal use by other commands, such as common method for writing string to a file.">
+      <commands userCommand="false" name="readFunction" output="AffineFunction">
+        <inputs type="ParameterDomain" name="paramDomain"/>
+        <inputs type="String" name="function"/>
+      </commands>
+      <commands description="Returning true" name="True" output="Boolean"/>
+      <commands description="Returning false" name="False" output="Boolean"/>
+      <commands userCommand="false" name="readDomain" output="Domain">
+        <inputs type="ParameterDomain" name="paramDomain"/>
+        <inputs type="String" name="domain"/>
+      </commands>
+      <commands userCommand="false" name="WriteToFile">
+        <inputs type="String" name="filename"/>
+        <inputs type="String" name="content"/>
+      </commands>
+      <commands description="Print the given Affine Function, Boolean, Domain or String" name="print">
+        <overloads xsi:type="commandIF:SpecializedOverloading">
+          <additionalInputs type="Domain" name="domain"/>
+        </overloads>
+        <overloads xsi:type="commandIF:SpecializedOverloading">
+          <additionalInputs type="AffineFunction" name="func"/>
+        </overloads>
+        <overloads xsi:type="commandIF:SpecializedOverloading">
+          <additionalInputs type="String" name="str"/>
+        </overloads>
+        <overloads xsi:type="commandIF:SpecializedOverloading">
+          <additionalInputs type="Boolean" name="boolValue"/>
+        </overloads>
+      </commands>
+      <commands description="Converts input String of the form &quot;a, b, c&quot; to String[] {&quot;a&quot;, &quot;b&quot;, &quot;c&quot;}." userCommand="false" name="stringListToArray" output="String[]">
+        <inputs type="String" name="list"/>
+      </commands>
+      <commands description="Converts comma delimited list of integers in string to integer list." userCommand="false" name="parseIntegerArray" output="List&lt;Integer>">
+        <inputs type="String" name="list"/>
+      </commands>
+    </subcategories>
+    <subcategories name="Analysis" description="Analyses are commands that give information about the program, without modifying the program.">
+      <commands description="Constructs a PRDG for the specified AffineSystem. Input variables are excluded from the PRDG default. To override this option, set the optional argument noInput to 0." name="BuildPRDG" output="PRDG">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.5/@commands.0/@inputs.0 //@subcategories.0/@subcategories.5/@commands.0/@inputs.1"/>
+        <inputs name="program"/>
+        <inputs type="String" name="systemName"/>
+        <inputs type="int" name="noInputs" defaultValue="1"/>
+      </commands>
+      <commands description="Exports the given PRDG as a dot file." name="ExportPRDG">
+        <inputs type="PRDG" name="prdg"/>
+        <inputs type="String" name="filename"/>
+      </commands>
+      <commands description="Performs uniqueness and completeness check of the program.&#xA;The program is a valid alphabets program, if it passes this check.&#xA;Details of the check can be found at \url{http://www.cs.colostate.edu/AlphaZ/wiki/doku.php?id=check_program}." name="CheckProgram">
+        <inputs name="program"/>
+      </commands>
+      <commands description="Verifies the target mapping given to a system. The third input takes &quot;NONE&quot;, &quot;MIN&quot;, &quot;MAX&quot; to control the verbosity." name="VerifyTargetMapping">
+        <inputs name="program"/>
+        <inputs type="String" name="system" defaultValue=""/>
+        <inputs type="String" name="verbose"/>
+      </commands>
+      <commands description="CheckSystem is CheckProgram applied to the specified system." name="CheckSystem">
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+      </commands>
+      <commands description="Farkas mono-dimensional scheduler." name="Farkas1DScheduler" output="List&lt;ScheduledStatement>">
+        <inputs type="PRDG" name="prdg"/>
+      </commands>
+      <commands description="Farkas multi-dimensional scheduler. Uses ISL implementation." name="FarkasMDScheduler" output="List&lt;ScheduledStatement>">
+        <inputs type="PRDG" name="prdg"/>
+      </commands>
+      <commands description="Pluto scheduler. Uses implementation in ISL." name="PlutoScheduler" output="List&lt;ScheduledStatement>">
+        <inputs type="PRDG" name="prdg"/>
+      </commands>
+      <commands description="Reverts source and destination of PRDG edges to match the expected input of the scheduler.&#xA;Will be removed once PRDG is fixed." userCommand="false" name="revertPRDGEdges" output="PRDG">
+        <inputs type="PRDG" name="prdg"/>
+      </commands>
+      <commands description="Pretty prints scheduled statements returned by a scheduler." userCommand="false" name="printScheduledStatements">
+        <inputs type="List&lt;ScheduledStatement>" name="statements"/>
+      </commands>
+    </subcategories>
+    <subcategories name="TargetMapping" description="Commands for specifying Target Mapping.">
+      <commands description="Specifies a space time mapping of a variable at a certain level. By default (when there is no value for level), the space-time map is set up for the first level of targetMapping." name="setSpaceTimeMap">
+        <overloads xsi:type="commandIF:SpecializedOverloading" overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.0/@inputs.0 //@subcategories.0/@subcategories.6/@commands.0/@inputs.1 //@subcategories.0/@subcategories.6/@commands.0/@inputs.2 //@subcategories.0/@subcategories.6/@commands.0/@inputs.3">
+          <additionalInputs type="String" name="stMap"/>
+        </overloads>
+        <overloads xsi:type="commandIF:SpecializedOverloading" overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.0/@inputs.0 //@subcategories.0/@subcategories.6/@commands.0/@inputs.1 //@subcategories.0/@subcategories.6/@commands.0/@inputs.3">
+          <additionalInputs type="String" name="stMap"/>
+        </overloads>
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="int" name="level" defaultValue="0"/>
+        <inputs type="String" name="varList"/>
+        <inputs type="AffineFunction" name="stMap"/>
+      </commands>
+      <commands description="Specifies a memory map for a variable. Some variables may share the same meory map and memory space, then they can be set up using one command by providing a list of variables. " name="setMemoryMap">
+        <overloads xsi:type="commandIF:SpecializedOverloading" overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.1/@inputs.0 //@subcategories.0/@subcategories.6/@commands.1/@inputs.1 //@subcategories.0/@subcategories.6/@commands.1/@inputs.2 //@subcategories.0/@subcategories.6/@commands.1/@inputs.3">
+          <additionalInputs type="String" name="memoryMap"/>
+          <additionalInputs type="String" name="modFactor" defaultValue="null"/>
+        </overloads>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.1/@inputs.0 //@subcategories.0/@subcategories.6/@commands.1/@inputs.1 //@subcategories.0/@subcategories.6/@commands.1/@inputs.2 //@subcategories.0/@subcategories.6/@commands.1/@inputs.4 //@subcategories.0/@subcategories.6/@commands.1/@inputs.5"/>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.1/@inputs.0 //@subcategories.0/@subcategories.6/@commands.1/@inputs.1 //@subcategories.0/@subcategories.6/@commands.1/@inputs.2 //@subcategories.0/@subcategories.6/@commands.1/@inputs.4"/>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.1/@inputs.0 //@subcategories.0/@subcategories.6/@commands.1/@inputs.1 //@subcategories.0/@subcategories.6/@commands.1/@inputs.2 //@subcategories.0/@subcategories.6/@commands.1/@inputs.3 //@subcategories.0/@subcategories.6/@commands.1/@inputs.4"/>
+        <overloads xsi:type="commandIF:SpecializedOverloading" overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.1/@inputs.0 //@subcategories.0/@subcategories.6/@commands.1/@inputs.1 //@subcategories.0/@subcategories.6/@commands.1/@inputs.2 //@subcategories.0/@subcategories.6/@commands.1/@inputs.3">
+          <additionalInputs type="String" name="memoryMap"/>
+        </overloads>
+        <overloads xsi:type="commandIF:SpecializedOverloading" overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.1/@inputs.0 //@subcategories.0/@subcategories.6/@commands.1/@inputs.1 //@subcategories.0/@subcategories.6/@commands.1/@inputs.2">
+          <additionalInputs type="String" name="memoryMap"/>
+        </overloads>
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="String" name="varList"/>
+        <inputs type="String" name="memorySpace" defaultValue="null"/>
+        <inputs type="AffineFunction" name="memoryMap"/>
+        <inputs type="String" name="modFactors" defaultValue="null"/>
+      </commands>
+      <commands description="Specifies the memory space for a variable. Normally, each variable has a separate memory space. However, some variables may share the same memory space, and this can be set up once by providing a list of variable." name="setMemorySpace">
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="String" name="space" defaultValue=""/>
+        <inputs type="String" name="varList"/>
+      </commands>
+      <commands description="Specifies the ordering of the statements (alphabets variables) in the generated code. This is similar to adding an additional ordering dimensions to the last dimension of space-time mapping, and providing ordering information.&#xA;AlphaZ provides an alternative to such specification by allowing the user to specify partial orderings between statements.&#xA;A total order is deduced at the time of code generation." name="setStatementOrdering">
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="String" name="predecessor"/>
+        <inputs type="String" name="successor"/>
+      </commands>
+      <commands description="Lists all SpaceTime maps that have been specified for a system." name="listSpaceTimeMaps">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.4/@inputs.0 //@subcategories.0/@subcategories.6/@commands.4/@inputs.1"/>
+        <inputs name="prog"/>
+        <inputs type="String" name="system"/>
+        <inputs type="int" name="level" defaultValue="0"/>
+      </commands>
+      <commands description="Lists all memory mappings specified for a system." name="listMemoryMaps">
+        <inputs name="prog"/>
+        <inputs type="String" name="system"/>
+      </commands>
+      <commands description="Applies schedules found by a scheduler (such as Farkas scheduler) to target mapping." name="setSchedule">
+        <inputs name="prog"/>
+        <inputs type="String" name="system"/>
+        <inputs type="List&lt;ScheduledStatement>" name="schedules"/>
+      </commands>
+      <commands description="Specify the parallel dimensions for a system. The nth dimension (specified by parallelDims, start with zero) with the specified ordering prefix to be parallel." name="setParallel">
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.7/@inputs.0 //@subcategories.0/@subcategories.6/@commands.7/@inputs.1 //@subcategories.0/@subcategories.6/@commands.7/@inputs.3 //@subcategories.0/@subcategories.6/@commands.7/@inputs.4"/>
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="int" name="level" defaultValue="0"/>
+        <inputs type="String" name="orderingPrefix" defaultValue="&quot;&quot;"/>
+        <inputs type="String" name="parallelDims" defaultValue="&quot;&quot;"/>
+      </commands>
+      <commands description="Create a spacetimelevel data stucture for level (level)" name="CreateSpaceTimeLevel">
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="int" name="level"/>
+      </commands>
+      <commands description="specify which dimension is the ordering dimension for each level of the targetMapping. Dimension starts with zero. If no value is specified for the targetMapping level, it is the first level by default. " name="setOrderingDimensions">
+        <overloads xsi:type="commandIF:SpecializedOverloading" overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.9/@inputs.0 //@subcategories.0/@subcategories.6/@commands.9/@inputs.1 //@subcategories.0/@subcategories.6/@commands.9/@inputs.2">
+          <additionalInputs type="int" name="dim"/>
+        </overloads>
+        <overloads overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.9/@inputs.0 //@subcategories.0/@subcategories.6/@commands.9/@inputs.1 //@subcategories.0/@subcategories.6/@commands.9/@inputs.3"/>
+        <overloads xsi:type="commandIF:SpecializedOverloading" overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.9/@inputs.0 //@subcategories.0/@subcategories.6/@commands.9/@inputs.1">
+          <additionalInputs type="int" name="dim"/>
+        </overloads>
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="int" name="level" defaultValue="0"/>
+        <inputs type="String" name="dims"/>
+      </commands>
+      <commands description="set space time map for the memory allocation statement for the input/output of the use equation.&#xA;isInput -- 0: for nTh input of the use equaiton&#xA;isInput -- 1: for nTh output of the use equation" name="setSpaceTimeMapForMemoryAllocation">
+        <overloads xsi:type="commandIF:SpecializedOverloading" overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.10/@inputs.0 //@subcategories.0/@subcategories.6/@commands.10/@inputs.1 //@subcategories.0/@subcategories.6/@commands.10/@inputs.2 //@subcategories.0/@subcategories.6/@commands.10/@inputs.3 //@subcategories.0/@subcategories.6/@commands.10/@inputs.4">
+          <additionalInputs type="String" name="stMap"/>
+        </overloads>
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="String" name="label" defaultValue=""/>
+        <inputs type="int" name="isInput"/>
+        <inputs type="int" name="num"/>
+        <inputs type="AffineFunction" name="stMap" defaultValue=""/>
+      </commands>
+      <commands description="set the space time map for the value copy statement for input/output of a use equation" name="setSpaceTimeMapForValueCopy">
+        <overloads xsi:type="commandIF:SpecializedOverloading" overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.11/@inputs.0 //@subcategories.0/@subcategories.6/@commands.11/@inputs.1 //@subcategories.0/@subcategories.6/@commands.11/@inputs.2 //@subcategories.0/@subcategories.6/@commands.11/@inputs.3 //@subcategories.0/@subcategories.6/@commands.11/@inputs.4">
+          <additionalInputs type="String" name="stMap"/>
+        </overloads>
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="String" name="label"/>
+        <inputs type="int" name="isInput" defaultValue=""/>
+        <inputs type="int" name="num"/>
+        <inputs type="AffineFunction" name="stMap"/>
+      </commands>
+      <commands description="set the space time map for the memory free statement for the input/ouput of a useEquation.&#xA;isInput -- 0, for the input of the useEquation&#xA;isInput -- 1, for the output of the useEquation" name="setSpaceTimeMapForMemoryFree">
+        <overloads xsi:type="commandIF:SpecializedOverloading" overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.12/@inputs.0 //@subcategories.0/@subcategories.6/@commands.12/@inputs.1 //@subcategories.0/@subcategories.6/@commands.12/@inputs.2 //@subcategories.0/@subcategories.6/@commands.12/@inputs.3 //@subcategories.0/@subcategories.6/@commands.12/@inputs.4">
+          <additionalInputs type="String" name="stMap"/>
+        </overloads>
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="String" name="label"/>
+        <inputs type="int" name="isInput"/>
+        <inputs type="int" name="num"/>
+        <inputs type="AffineFunction" name="stMap"/>
+      </commands>
+      <commands description="set the space time map for the memory allocation, value copy, memory allocation statement for the input/output of the useEuqation.&#xA;isInput -- 0: for the input of the useEquation&#xA;isInput -- 1: for the output of the useEquation" name="setSpaceTimeMapForUseEquationOptimization">
+        <overloads xsi:type="commandIF:SpecializedOverloading" overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.13/@inputs.0 //@subcategories.0/@subcategories.6/@commands.13/@inputs.1 //@subcategories.0/@subcategories.6/@commands.13/@inputs.2 //@subcategories.0/@subcategories.6/@commands.13/@inputs.3 //@subcategories.0/@subcategories.6/@commands.13/@inputs.4">
+          <additionalInputs type="String" name="stMapForMemoryAllocation"/>
+          <additionalInputs type="String" name="stMapForValueCopy"/>
+          <additionalInputs type="String" name="stMapForMemoryFree"/>
+        </overloads>
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="String" name="label"/>
+        <inputs type="int" name="isInput"/>
+        <inputs type="int" name="num"/>
+        <inputs type="AffineFunction" name="stMapForMemoryAllocation"/>
+        <inputs type="AffineFunction" name="stMapForValueCopy"/>
+        <inputs type="AffineFunction" name="stMapForMemoryFree"/>
+      </commands>
+      <commands description="set memory space for the input/ouput of the useEquation" name="setMemorySpaceForUseEquationOptimization">
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="String" name="label"/>
+        <inputs type="int" name="isInput"/>
+        <inputs type="int" name="num"/>
+        <inputs type="String" name="spaceName"/>
+      </commands>
+      <commands description="configure a band of continuous dimensions for tiling." name="setBandForTiling">
+        <overloads description="set up tiling band with empty ordering prefix" overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.15/@inputs.0 //@subcategories.0/@subcategories.6/@commands.15/@inputs.1 //@subcategories.0/@subcategories.6/@commands.15/@inputs.2 //@subcategories.0/@subcategories.6/@commands.15/@inputs.3 //@subcategories.0/@subcategories.6/@commands.15/@inputs.5 //@subcategories.0/@subcategories.6/@commands.15/@inputs.6"/>
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="String" name="bandName"/>
+        <inputs type="int" name="levels" defaultValue="1"/>
+        <inputs type="String" name="orderingPrefix" defaultValue="&quot;&quot;"/>
+        <inputs type="int" name="startDim" defaultValue="-1"/>
+        <inputs type="int" name="endDim" defaultValue="-1"/>
+      </commands>
+      <commands description="Configure the subtiling specification for a band. The band is identified by the name. There are two types of tiling type: sequential and openmp wavefront. Represented with &quot;sequential&quot; and &quot;wavefront&quot; separately." name="setSubTilingWithinBand">
+        <overloads description="Tile all the dimensions in the band for the current level" overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.16/@inputs.0 //@subcategories.0/@subcategories.6/@commands.16/@inputs.1 //@subcategories.0/@subcategories.6/@commands.16/@inputs.2 //@subcategories.0/@subcategories.6/@commands.16/@inputs.3 //@subcategories.0/@subcategories.6/@commands.16/@inputs.6"/>
+        <inputs name="program" defaultValue=""/>
+        <inputs type="String" name="system"/>
+        <inputs type="String" name="bandName"/>
+        <inputs type="int" name="level" defaultValue="1"/>
+        <inputs type="int" name="startDim" defaultValue="-1"/>
+        <inputs type="int" name="endDim" defaultValue="-1"/>
+        <inputs type="String" name="tilingType" defaultValue="&quot;sequential&quot;"/>
+      </commands>
+      <commands description="Set up the default configuration for dtiler: apply parametric one level tiling to all the dimensions from [start to end]." name="setDefaultDTilerConfiguration">
+        <overloads description="Default configuration for DTiler for the whole program: apply parametric one level tiling to all the dimensions of the given system in the program." overLoadedInputs="//@subcategories.0/@subcategories.6/@commands.17/@inputs.0 //@subcategories.0/@subcategories.6/@commands.17/@inputs.1 //@subcategories.0/@subcategories.6/@commands.17/@inputs.4"/>
+        <inputs name="program"/>
+        <inputs type="String" name="system"/>
+        <inputs type="int" name="startDim" defaultValue="-1"/>
+        <inputs type="int" name="endDim" defaultValue="-1"/>
+        <inputs type="String" name="tilingType" defaultValue="&quot;sequential&quot;"/>
+      </commands>
+    </subcategories>
+  </subcategories>
+</commandIF:Category>

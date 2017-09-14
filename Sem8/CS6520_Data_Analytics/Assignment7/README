@@ -1,0 +1,7 @@
+Akilesh B, CS13B1042
+
+This folder contains Assign7.R I am using glm or generalized linear model or logistic regression to solve this problem. I am getting 90.1% accuracy with the mentioned approach. The ROC curve gets saved as 'Rplots.pdf' once it is run.
+
+How to run?
+
+Rscript Assign7.R 
