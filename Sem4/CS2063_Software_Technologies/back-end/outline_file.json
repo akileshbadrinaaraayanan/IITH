@@ -1,0 +1,14 @@
+{
+  "map": [
+    ["id","id"],
+    ["organizattionName", "from.name"],
+    ["category","from.category"],
+    ["postedBy", "from.name"],
+    ["createdTime","created_time"],
+    ["message","message"],
+    ["likesCount","likes.summary.total_count"],
+    ["commentsCount","comments.summary.total_count"],
+    ["shareCount","shares.count"]
+  ],
+  "collection": "data"
+}
