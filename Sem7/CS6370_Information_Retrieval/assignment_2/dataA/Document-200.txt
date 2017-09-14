@@ -1,0 +1,13 @@
+URL : http://economictimes.indiatimes.com/tech/software/goodwill-is-the-source-code-at-this-open-coder-collective/articleshow/53070730.cms
+
+Title : Goodwill is the source code at this open coder collective - The Economic Times
+
+Meta Keywords : world,Pune,people,Josh Software,India,GitHub,Gautam Rege,ET,CodeCuriosity
+
+Date :  Jul 06, 2016, 04.05 AM IST
+
+Document ID : 200
+
+Content:
+  PUNE: About a year ago, Gautam Rege decided that he wanted to do something to give back to the open source community.     Rege, along with Sethupathi Asokan, is the cofounder of Josh Software, is among the top companies working on the Ruby on Rails framework in India.     "With an experience of many years in the open source world, we realised that there is a need to build a platform for measuring the open source contributions, which coders make every day across the world," Rege told ET.     After multiple formats and iterations the company finally launched CodeCuriosity about two months ago. As of now, the platform has over 200 users since launch â with zero marketing or publicity.     Coders signs up on CodeCuriosity, set their own goals depending on how much time they can commit to it that month and start contributing to ongoing projects on Github. Github is a repository hosting service mostly used to host open source software projects.     What sets this apart from other similar initiatives is that here it is upto the coder to select what he wants to work on - typically most such projects are aimed at solving a specific problem.     Coders collect points based on meeting the targets they've set themselves provided they meet certain basic quality parameters which can be redeemed against giftcards.     CodeCuriosity has also come up with a widget for repository owners which can be used by them to recognise the best contributors to their repositories.     "So far, there was no way a person could make money from contributing to open source. This way it can become a source of livelihood and people can get rewarded irrespective of their level of expertise," said Rege. He likens the platform to a Fitbit for contributors to open source networks - something that measures their progress and motivates them.  
+

@@ -1,0 +1,13 @@
+URL : http://economictimes.indiatimes.com/tech/software/enterprise-spending-on-mobile-app-development-remains-low-says-gartner-survey/articleshow/52898866.cms
+
+Title : Enterprise spending on mobile app development remains low, says Gartner survey - The Economic Times
+
+Meta Keywords : Mobile App development,Gartner,business-to-employee
+
+Date :  Jun 24, 2016, 01.16 PM IST
+
+Document ID : 203
+
+Content:
+  NEW DELHI: Forty-two per cent of organizations expect to increase spending on mobile app development by an average of 31 per cent in 2016, according to a recent survey by Gartner. Despite this, the average proportion of the overall application development budget allocated to mobile is only 10 per cent, a 2 per cent decrease from 2015.     The Gartner survey of IT and business leaders responsible for mobile strategy and/or custom mobile app development within their organizations was conducted in September 2015 across the United States, EMEA, Latin America and Asia/Pacific. The survey focused on understanding organizations' activities in mobile app development, covering both business-to-employee (B2E) and business-to-consumer (B2C) apps.     "Demand for mobile apps in the enterprise is growing, but the urgency to scale up mobile app development doesn't yet appear to be a priority for most organizations," said Adrian Leow, principal research analyst at Gartner.     The survey revealed that the majority of enterprises developing mobile apps are focused on custom mobile app development, rather than customizing configurable apps or building from off-the-shelf templates.     According to Gartner, the range of mobile apps in use across the enterprise varies among user groups and lines of business in terms of the apps' adherence to corporate and security policies.     Leow believes the solution to this issue of app management fragmentation and rogue apps is to pursue the development of an enterprise app store. The survey revealed that organizations have 26 mobile apps in their own enterprise app store on average, with a third of those mobile apps being custom-built, while the remainder are prepackaged apps (such as Box, Evernote and SAP Fiori).  
+

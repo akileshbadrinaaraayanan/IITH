@@ -1,0 +1,13 @@
+URL : http://economictimes.indiatimes.com/mf/mf-news/et-in-the-classroom-investing-in-fund-sips-using-nach/articleshow/53311546.cms
+
+Title : ET in the Classroom: Investing in Fund SIPs Using NACH - The Economic Times
+
+Meta Keywords : SIPs,mutual funds,India
+
+Date :  Jul 21, 2016, 06.13 AM IST
+
+Document ID : 872
+
+Content:
+  Mutual fund investors doing SIPs will have to use National Automated Clearing House (NACH), a new system of clearing, which has been implemented by National Payments Corporation of India (NPCI), instead of the erstwhile ECS (Electronic Clearing Service). All new mutual fund (MF) SIPs will have to be registered using NACH mandates only.      1. What is NACH OTM (one-time mandate) in mutual funds?   NACH is a onetime registration process which allows an investor to register systematic investment plans (SIPs) in MFs. By registering this mandate, you authorise your bank to debit a certain amount to enable investments in a mutual fund scheme. This mandate can either be given for a fixed period (say one year or three years) or perpetual till you cancel it. Every folio needs a separate mandate. If you have SIPs in different fund houses, you will have to fill in separate NACH forms.      2.How to register for NACH OTM?   Registration is just a one-time process per folio that you hold in a mutual fund scheme. Investors need to fill and submit the duly signed 'OTM Form'. The signatures on the form should be as per your bank records because the form will be sent to your bank branch. Investors also need to attach a cancelled cheque which will help the fund house validate the bank account.    3. What details do I need to mention on the OTM form?   Besides mentioning regular and mandatory details like bank account number, bank name and branch, contact details, one must also mention the amount or daily limit that can be debited.    4. I have existing SIPs running in mutual funds. Do I need to do anything for that?   Your existing SIPs will continue to run till the time you have given an ECS mandate. Once the tenure or current ECS mandate ends, if you wish to renew the SIP, you will have to fill in a NACH form, for the same.  
+

@@ -1,0 +1,13 @@
+URL : http://economictimes.indiatimes.com/magazines/brand-equity/has-google-solved-the-biggest-pang-with-reading-comics-on-smartphones/articleshow/53395916.cms
+
+Title : Has Google solved the biggest pang with reading comics on smartphones? - The Economic Times
+
+Meta Keywords : Google Play Books,Google,ebook,bubble zoom,android
+
+Date :  Jul 27, 2016, 05.17 AM IST
+
+Document ID : 318
+
+Content:
+  Smartphones are well-suited to many tasks - but reading comics is not one of them. Even on the biggest phablets, text bubbles become small and illegible, forcing the reader to laboriously zoom in-and-out as they read. But Google thinks it has solved this problem with a nifty new feature called Bubble Zoom.     Bubble Zoom is built into an update for its ebook about Google Play Books, for Android. It automatically detects texts bubbles in a comic and enlarges them - letting the user clearly read what's being said without having to zoom and swipe around the page.. It's powered using Google's machine learning tech, the company said in a blogpost published Thursday.           Weâre geeking out at      #sdcc      with new Bubble Zoom for comics in Google Play Books      https://t.co/KiG4bWeY2o pic.twitter.com/wSgTsbFtXu     â Google (@google)    July 21, 2016      Picture: BCCL    Right now, it doesn't work on everything: Just "all Marvel and DC collected volumes." But the company has some high ambitions for the technology longterm. "As we continue to teach our machines to read more comic book styles," it says, "our goal is to eventually bring Bubble    
+

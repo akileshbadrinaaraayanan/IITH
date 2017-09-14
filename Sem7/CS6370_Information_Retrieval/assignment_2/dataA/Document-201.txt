@@ -1,0 +1,13 @@
+URL : http://economictimes.indiatimes.com/tech/software/oracle-brings-highly-secured-sparc-platform-to-cloud/articleshow/53062985.cms
+
+Title : Oracle brings highly-secured SPARC platform to Cloud - The Economic Times
+
+Meta Keywords : SPARC,Silicon,Oracle,John Fowler
+
+Date :  Jul 05, 2016, 05.42 PM IST
+
+Document ID : 201
+
+Content:
+  NEW DELHI: In a bid to provide a more secured Cloud experience to its customers, software and cloud major Oracle on Tuesday announced to bring the advanced security, efficiency and simplicity of its SPARC platform to the Cloud.     Oracle's state-of-the-art SPARC M7 microprocessor is the world's first silicon-based memory intrusion detection and a high-speed encryption chip.     All existing commercial and custom applications will run on the new SPARC enterprise cloud services and solutions unchanged with significant improvements in security, efficiency and simplicity, the company said.     "We are still in the early phases of Cloud computing adoption and as the market matures, organisations will increasingly move critical enterprise workloads to the cloud," said John Fowler, Executive Vice President, Systems, Oracle, in a statement.     "To enable our customers to take advantage of this next stage of Cloud computing to speed innovation, reduce costs and drive business growth, we are focused on delivering proven enterprise-grade services such as the Oracle SPARC platform in the Oracle Cloud," he added.     The latest additions to the SPARC platform are built on the revolutionary new 4.27 GHz, 8-core/64-thread SPARC S7 microprocessor with "Software in silicon" features such as "Silicon Secured Memory" and "Data Analytics Accelerators".     It delivers the industry's highest per-core efficiency and enables organisations to run applications of all sizes on the SPARC platform.  
+

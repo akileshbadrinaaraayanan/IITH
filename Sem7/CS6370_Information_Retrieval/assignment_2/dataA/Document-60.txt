@@ -1,0 +1,13 @@
+URL : http://economictimes.indiatimes.com/magazines/panache/how-to-permanently-erase-data-from-an-android-device/articleshow/53655189.cms
+
+Title : How to permanently erase data from an Android device - The Economic Times
+
+Meta Keywords : video,So,people,in,encryption,decryption
+
+Date : Aug 11, 2016, 07.54 PM IST
+
+Document ID : 60
+
+Content:
+  Smartphones have almost become everyone's digital extensions. They are one gadget that people have with them almost the entire time. That said, smartphones are not only used for communication, but also hold a whole bunch of personal user information like contacts, photos, email and more. So if one plans on selling off their smartphone or giving it away to someone else, it is important to ensure that all the data on it is securely erased and the device is digitally wiped clean.     It's a common misconception that doing a 'Factory Reset' is the ultimate way of securely deleting data from a smartphone. But that's not the case, as a file is not actually erased when it's deleted. Only the information it contains is marked as deleted/hidden into some other free location on the storage.     Factory reset reverts a device to its default state. And although majority of data gets deleted this way, small bits of information like multimedia, email etc. might remain in the internal memory.    No worries, as it's easy to 'permanently' erase anything and everything from and Android device. For those who are considering disposing off their old smartphones, this can come in really handy. Here are two ways of securely erasing data from an Android device.     Encrypt device storage:    Encryption converts data and information stored on a smartphone into a cryptic format before factory reset is initiated. Without proper decryption, the data just appears to be a garbled mess that makes no sense. Encrypting device storage ensures that even if some files are somehow left after a factory reset operation, they just appear as random rubbish and not the actual deal.     To encrypt device's storage, navigate to Settings > Security (or related setting) and tap on the 'Encrypt phone' option. Based on how much data is stored on the device, this may take a while. Once the encryption is done, factory reset can be performed.     Overwrite with throwaway data:     Although encrypting the device and then doing a factory reset is generally enough to erase all the data securely, doing a bit extra doesn't hurt. To do this, set up the smartphone after factory resetting it. Only this time, make sure no email details are added.     Once the setup is complete, record a junk video for as long as the internal storage on the device doesn't get filled up. Doing this will overwrite the free space with throwaway data.  
+

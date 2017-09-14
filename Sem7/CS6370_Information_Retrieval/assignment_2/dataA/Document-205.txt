@@ -1,0 +1,13 @@
+URL : http://economictimes.indiatimes.com/tech/software/tech-helps-blind-runner-conquer-ultra-marathons/articleshow/52805547.cms
+
+Title : Tech helps blind runner conquer ultra-marathons - The Economic Times
+
+Meta Keywords : ultra-marathons,Simon Wheatcroft,retinitis pigmentosa,IBM,eAscot
+
+Date :  Jun 18, 2016, 09.47 AM IST
+
+Document ID : 205
+
+Content:
+  By Aritra Sarkhel     BENGALURU: Simon Wheatcroft was diagnosed with the horrific retinitis pigmentosa, at the age of 18 which left him blind. But since then, he has never looked back and transformed himself into an exceptional ultramarathon runner popular the world over and technology so far has played a major role in helping him achieve his dream.     Wheatcroft did not let his blindness affect his life but is rather using the power of mobile applications in the modern world to achieve his goal. In the past year, he entered into a partnership with IBM to develop an app which would help him during his runs. The app would help notify him of any possible obstacles and keep him on pace with the rest.     The exceptional application is called eAscot and interestingly is named after his guide dog Ascot. While the app is still under development with IBM's London Bluemix Garage, one of their premier innovation hubs, Wheatcroft is using the GPS-based fitness-tracking app called Runkeeper in the meantime which itself is empowered by IBM's cloud.     "This app allows me to track my run and know how far I am from the closest marked land marks," says Wheatcroft.     But the application ecosystem for such blind runners is still in its nascent stage and for such heavy-duty ultra marathon runs, the apps need to memorise all the landmarks and should be enabled with satellite navigation with a simpler user interface.     Moreover, developers will need to take into account all parameters like location, weight of the device, hallucination-proof UI and huge amounts of monetary investments.     Although the app is still in the development and testing phase, Wheatcroft used a version of the app to run the difficult 258-km Sahara race in Namibia desert.     This is one of the most dangerous races in the world to compete in but the champion that Wheatcroft is went ahead and participated in it and managed around 161km before pulling out of the race due to the tough weather conditions.     "It was a gritty challenge but I did not give up and I continue to push myself and win the race in the coming years," says Wheatcroft.  
+

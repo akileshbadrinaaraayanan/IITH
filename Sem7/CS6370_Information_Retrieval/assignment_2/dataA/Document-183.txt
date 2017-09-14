@@ -1,0 +1,54 @@
+URL : http://economictimes.indiatimes.com/tech/software/retroscope-can-be-the-next-frontier-in-cybercrime-investigation/articleshow/53719669.cms
+
+Title : RetroScope can be the next frontier in cybercrime investigation - The Economic Times
+
+Meta Keywords : Social media,Smartphone,RetroScope,Purdue University,Instagram,Facebook,android
+
+Date :  Aug 16, 2016, 12.33 PM IST
+
+Document ID : 183
+
+Content:
+
+
+  WASHINGTON: Scientists, including one of Indian-origin, have developed a new technique that could help law enforcement officials gather data from smartphones while investigating crimes.
+  
+
+  The increasing use of mobile technology in today's society has made information stored in the memory of smartphones just as important as evidence recovered from traditional crime scenes.
+  
+
+  The new technique, called RetroScope, moves the focus from a smartphone's hard drive, which holds information after the phone is shut down, to the device's RAM, which is volatile memory.
+  
+
+  "We argue this is the frontier in cybercrime investigation in the sense that the volatile memory has the freshest information from the execution of all the apps," said Dongyan Xu, professor at Purdue University, who led the research along with colleague Xiangyu Zhang.
+  
+
+  "Investigators are able to obtain more timely forensic information toward solving a crime or an attack," Xu said.
+  
+
+  Although the contents of volatile memory are gone as soon as the phone is shut down, it can unveil surprising amounts of forensic data if the device is up and running.
+  
+
+  It was discovered that apps left a lot of data in the volatile memory long after that data was displayed, Xu said.
+  
+
+  To uncover that data, researchers including doctoral students Rohit Bhatia theorised that rather than focusing on searching for that data, the phone's graphical rendering code could be re-targeted to specific memory areas to obtain and bring up several previous screens shown by an app.
+  
+
+  RetroScope makes use of the common rendering framework used by Android to issue a redraw command and obtain as many previous screens as available in the volatile memory for any Android app.
+  
+
+  The screens recovered, beginning with the last screen the app displayed, are presented in the order they were seen previously.
+  
+
+  "Anything that was shown on the screen at the time of use is indicated by the recovered screens, offering investigators a litany of information," Xu said.
+  
+
+  In testing, RetroScope recovered anywhere from three to 11 previous screens in 15 different apps, an average of five pages per app. The apps ranged from popular social media platforms Facebook and Instagram to more privacy-conscious apps and others.
+  
+
+  "We feel without exaggeration that this technology really represents a new paradigm in smart phone forensics," Xu said. "It is very different from all the existing methodologies for analysing both hard drives and volatile memories,"
+  
+
+
+

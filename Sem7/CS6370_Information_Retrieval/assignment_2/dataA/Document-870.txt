@@ -1,0 +1,13 @@
+URL : http://economictimes.indiatimes.com/mf/mf-news/et-in-the-classroom-taxation-in-a-mutual-fund/articleshow/53533367.cms
+
+Title : ET in the classroom: Taxation in a mutual fund - The Economic Times
+
+Meta Keywords : portfolio,mutual fund schemes,LTCG,indexation,equity schemes,capital gains,Arbitrage funds
+
+Date :  Aug 04, 2016, 05.39 AM IST
+
+Document ID : 870
+
+Content:
+  As per data from AMFI, AUM from tier-2&3 towns in retail segment increased by Rs 40,700 crore, in last one year, indicating there are many firsttime investors in MFs. Since taxation for a MF is different from that for traditional fixed deposits, it is important that investors understand the tax liability of the scheme they have invested in to reduce hassles at the end of the year.    1. How does taxation work on equity oriented MFs?   Funds where equity holding is more than 65% of the total portfolio are classified as equity funds for taxation. All equity schemes, arbitrage funds, balanced funds (which have 65-75% equity and 25-35% debt) and equity savings funds (equity, debt and arbitrage) too are classified as equityoriented funds from a taxation perspective.     Fund of Funds (mutual funds (MFs) which invests in other funds) & international funds (funds which have more than 35% exposure to international equities) will be kept under debt category for tax purpose.    If you buy and hold an equity-oriented MF for more than 1 year, long term capital gain on such funds will be nil. However, if you sell the fund before one year you are liable to pay short-term capital gains tax.    2. How is tax liability different for debt-oriented funds?   Liquid funds, income funds, gilt funds, capital protection schemes are classified as debt-oriented schemes for taxation. Units of such non-equity mutual funds held for more than 36 months qualify as long-term capital gains. On such units, long-term capital gains (LTCG) are taxed at 20% with indexation, while short term capital gains on such funds are taxed as per the slab rate of the individual investor.    3. If an investor opts for dividend option, how is that income treated?   Investors can opt for either the dividend option or a growth option in a mutual fund scheme. If they opt for the growth option, they do not get any dividends. When they sell the fund they earn a capital gain. If they opt for the dividend option, they will receive intermittent dividends at regular intervals plus earn a capital appreciation, when they redeem.     Dividend income is tax-free or exempted from tax in the hands of individual/HUF (Hindu Undivided Family) investors in all mutual fund schemes. Dividend Distribution Tax (DDT), which is applicable to non-equity schemes only, is paid by the mutual fund/as-set management company.  
+

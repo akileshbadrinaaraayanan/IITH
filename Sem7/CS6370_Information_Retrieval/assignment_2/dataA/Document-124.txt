@@ -1,0 +1,13 @@
+URL : http://economictimes.indiatimes.com/magazines/panache/how-does-facebook-train-its-ai-bots-take-lessons-for-free/articleshow/53772402.cms
+
+Title : How does Facebook train its AI bots? Take lessons for free! - The Economic Times
+
+Meta Keywords : US,tech,Social media,new,in,Facebook,artificial intelligence
+
+Date : Aug 19, 2016, 06.31 PM IST
+
+Document ID : 124
+
+Content:
+  NEW YORK: What to learn from Facebook how does it train its artificial intelligence (AI) bots? Take the lessons from the social media giant itself -- for free.    in a bid to help researchers and engineers, Facebook has made its AI bot-building research available in the form of fastText library -- an open-sourced platform, tech website engadget reported on Friday.     Part of the Facebook AI Research (FAIR) lab, the fastText library can cut language training from days to seconds.     "Ultimately, we hope that fastText will help us all design better applications and further advance the research in language understanding," FAIR said in a statement.     Budding AI developers can look to the library for help.     The library of code is now available on Github for public use and scrutiny and will require a compiler with "good C++11 support," the report added.     According to Facebook, fastText is much quicker than other learning methods.     It can train models "on more than one billion words in less than 10 minutes using a standard multi-core CPU."     "Such a move can also encourage developers to focus on building for Facebook's platform first," the report added.  
+

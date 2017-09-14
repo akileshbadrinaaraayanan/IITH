@@ -1,0 +1,24 @@
+This folder contains code for assignment 2 - programming section.
+
+part a) cs13b1042_assign2a.py
+part b) cs13b1042_assign2b.py
+part c) cs13b1042_assign2c.py
+
+To run : python <programname>
+
+Image details
+
+prox_parta.png is the plot of f-f* vs iterations for proximal gradient implementation over 5000 iterations.
+
+accprox_parta.png is the plot of f-f* vs iterations for acc. proximal gradient implementation over 5000 iterations.
+
+Part b) B* has all zeros (there are no non-zero elements) The graph partb.png measures the accuracy for different values of lambda
+
+In part c) -> Since B* matrix is all zeros, we find the predicted class label and check with the ground truth ratings available.
+
+Images -> correct_1.png till correct_5.png are all correctly classified samples, whereas incorrect_1.png till incorrect_5.png are all incorrectly classified samples.
+
+
+
+
+

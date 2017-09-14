@@ -1,0 +1,13 @@
+URL : http://economictimes.indiatimes.com/tech/software/business-intelligence-revenue-in-india-to-reach-214-mn-in-2016-gartner/articleshow/52641050.cms
+
+Title : Business intelligence revenue in India to reach $214 mn in 2016: Gartner - The Economic Times
+
+Meta Keywords : New Delhi,Market,Management,information,India,Business
+
+Date :  Jun 07, 2016, 08.52 PM IST
+
+Document ID : 208
+
+Content:
+  NEW DELHI: Business intelligence (BI) software revenue is expected to grow 18.6 per cent to reach $213.8 million in 2016 over the previous year as spending on data analytics solutions rises, research firm Gartner said today.     The revenue, which stood at $180.2 million in 2015, included revenue from platforms like BI, advanced analytics, analytic applications and corporate performance management software, it said in a report.     "The BI and analytics market is undergoing significant change. Adoption of machine learning techniques and the emergence of smart data discovery solutions are fueling next round of investments," Gartner Research Director Bhavish Sood said.     BI platforms segment continued to lead the BI software market in India accounting for $115.6 million in revenues in 2015.     This is forecast to reach $136.8 million in 2016, growing 18.3 per cent over previous year, Gartner said.     "We see signs of the emerging importance of BI in India as senior executives are increasingly exploring the different styles of analytics to resolve their business imperatives," Sood said.     There is an increased emphasis on metrics management and the growing use of performance management, he added.     Big data use cases are maturing and have executive visibility and this is leading to more investments in BI and information management, he said.     Analytic Applications and Performance Management accounted for $21.1 million in revenues, while CPM Suites and Advanced Analytics Platforms contributed $28.5 million and $15 million, respectively.  
+

@@ -1,0 +1,9 @@
+This folder contains the code for programming questions 1, 2 of assignment 1.
+
+Question 1 => 1a.py, 1b.py and 1c.py for corresponding parts.
+Question 2 => 2.py
+
+The plot obtained from 1c.py is also stored as 1c.png
+
+Please note that the paths of y.txt and beta.txt need to be changed appropriately in every python file
+

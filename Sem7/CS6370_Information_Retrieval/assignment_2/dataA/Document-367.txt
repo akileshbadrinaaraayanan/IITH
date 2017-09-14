@@ -1,0 +1,13 @@
+URL : http://economictimes.indiatimes.com/wealth/invest/all-you-need-to-know-about-i-sip/articleshow/53682707.cms
+
+Title : All you need to know about i-SIP - The Economic Times
+
+Meta Keywords : urn,pan,KYC,i-SIP,facility
+
+Date : Aug 15, 2016, 06.30 AM IST
+
+Document ID : 367
+
+Content:
+  Investors have the option of enrolling for systematic investments plans online using the i-SIP facility. This is a completely paperless and secure method of setting up a SIP for funds that offer such a facility. To use the i-SIP facility, the investor should have access to Netbanking. Also, the bank should be among those approved to offer an i-SIP facility.    KYC   KYC compliance is one of the basic preconditions of mutual fund investing. The investor should have his KYC documents submitted and registered with the KYC Registration Agency to be eligible to invest online through i-Sip.    Online i-SIP form   Investors can register an i-Sip by filling up an online form available on the website of the fund. Information such as the PAN, bank details, address, SIP scheme name, amount, frequency and period must be entered at the time of registration.    URN   Once all the information is entered and submitted online, a URN (unique registration number) is generated. This is displayed on the screen and also sent to the investor's email address and registered mobile number. The URN is required to be quoted to carry out the next step.    Biller addition   Next, the investor is required to log in to his internet banking site and add the mutual fund as a new biller. Biller addition must be completed within 10 days after the generation of the URN, otherwise it will be deactivated. The URN must be entered when prompted. The bank will then activate the biller after verification.    Auto debit   The investor can opt for the auto debit option while registering the biller. On doing this, the SIP instalment will automatically be debited from the investor's bank account and sent as payment to the biller (mutual fund) on the due date.    Points to note   It is important to retain the URN, as the investor might need to quote the same for future reference.     The registration status of the SIP can be checked online by logging on to the fund website.     (The content on this page is courtesy Centre for Investment Education and Learning (CIEL). Contributions by Girija Gadre, Arti Bhargava and Labdhi Mehta)  
+

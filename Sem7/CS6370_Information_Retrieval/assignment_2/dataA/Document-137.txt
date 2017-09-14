@@ -1,0 +1,13 @@
+URL : http://economictimes.indiatimes.com/tech/ites/stephen-pratts-noodle-ai-launches-operations-in-india/articleshow/53772973.cms
+
+Title : Stephen Pratt's Noodle.ai launches operations in India - The Economic Times
+
+Meta Keywords : technology,Stephen Pratt,Software Development Life Cycle,science,PR,people,Noodle.ai,India,Business,Bengaluru
+
+Date :  Aug 19, 2016, 06.48 PM IST
+
+Document ID : 137
+
+Content:
+  BENGALURU: Former IBM Watson executive Stephen Pratt's new venture Noodle.ai that offers enterprises artificial intelligence solutions has launched its development centre in Bengaluru.     The TPG funded venture's enterprise solutions include applied artificial intelligence technologies using machine learning, predictive data analytics, and data sciences with human-centered design, business process engineering and big data.     Stephen Pratt said that the large talent pool in India was what made Noodle.ai set up its development centre in startup hub of the country.     "Data science is different from software development life cycle and requires highly skilled professionals to build an artificially intelligent engine. We are hiring PhD and master's degree holders from India to work for Noodle.ai," Pratt said.     Ted Gaubert, CTO at Noodle.ai wrote a bot programme that crawled through the web to generate and list of professionals with the skills the company was looking for and then the shortlisted candidates were interviewed.     The company is looking to hire 500 people in the next five years, out of which two-third professionals will be hired from India and will work from Noodle.ai's new office on the Outer Ring Road.     The customer base for the company is focused on large enterprise in the U.S.     Pratt, most recently served as Global Leader of Watson for IBM Global Business Services was also heading the Infosys consulting arm. At Noodle.ai, he is joined Raj Joshi, previously senior executive VP at MicroStrategy and Dr. Ted Gaubert, previously Chief Technology Officer of Infosys Consulting. The team brings deep experience in AI, big data, data science, machine learning and data analytics across industries.  
+

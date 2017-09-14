@@ -1,0 +1,90 @@
+URL : http://economictimes.indiatimes.com/tech/hardware/pokemon-go-rekindles-hope-for-augmented-reality-products/articleshow/53296924.cms
+
+Title : Pokemon Go rekindles hope for augmented reality products - The Economic Times
+
+Meta Keywords : Virtual reality,US,Suman Saraf,Pokemon Go,Japan,Australia,Augmented reality,Apple
+
+Date :  Jul 20, 2016, 11.26 AM IST
+
+Document ID : 257
+
+Content:
+
+
+  NEW DELHI: When the $1,500 eye wearable device Google Glass failed to take off commercially last year, it hit the augmented reality (AR) industry to a certain extent. Now, the maddening craze for the GPS-based Pokemon Go game, which projects digital creatures around you to "capture" on your smartphone, has brought back the focus -- and a revival strategy -- for the AR players.
+  
+
+  For a layman, unlike the virtual reality (VR) where the user is isolated from the real world, AR users continue to be in touch with the real world while interacting with the virtual world. This makes experts feel that AR has a definite edge over VR in the future.
+  
+
+  Is Pokemon Go a revival sign for AR technology after the commercial failure of Google Glass?
+  
+
+  "Pokemon Go is not an AR game in the strictest sense. However, that is the most convenient label we can apply to it. It is primarily a geo-location aware game which can overlay some objects in the real world. To experience the true potential of AR, you have to look at Google's Project Tango, US startup Magic Leap, Microsoft's Hololens and others," explained Suman Saraf, Co-Founder and CTO at BlueStacks -- one of the largest mobile gaming platforms for computers in the world.
+  
+
+  "But phenomena like Pokemon Go will certainly help the masses relate to AR and make it part of their daily conversations," Saraf told IANS.
+  
+
+  The Pokemon Go is available for download on Google Playstore and Apple's App Store in the US, Japan, Australia, the Philippines, New Zealand, Germany, Britain, Europe and Canada and is coming soon to India, Singapore, Taiwan and Indonesia.
+  
+
+  The mobile game, developed by US software company Niantic and part-owned by Japanese videogame giant Nintendo, has topped over 15 million downloads and its servers are crashing worldwide owing to heavy traffic (amid some hacking reports too). The game uses the GPS capabilities of your device in conjunction with Google Maps to "place" creatures in real world locations, which you then try to find using your device as a guide.
+  
+
+  Once you are in proximity to the "placed" creature, you then use your device's camera to "view" the creature and try to "capture" it by throwing "Pokeballs" at it.
+  
+
+  "The innovative combination of AR, gaming and mapping technologies have created a very interesting, indeed addictive, gaming experience which has entranced the world. It will certainly accelerate interest in AR technologies," notes Jaideep Mehta, Managing Director, the International Data Corporation (IDC), South Asia.
+  
+
+  According to Saraf, Pokemon Go appears to have nailed a magical recipe.
+  
+
+  "Importantly, we have to remember it is building on a 25-year-old franchise with a cult following. I am sure there will be a bunch of games sprouting on similar themes. Intellectual property (IP) owners would be jumping on this opportunity," Saraf said.
+  
+
+  Democratic presidential nominee Hillary Clinton has started to use Pokemon Go as a campaigning tool to register voters. The massive response has led to Nintendo doubling its value at the Tokyo Stock Exchange.
+  
+
+
+
+  Pokemon Go has overtaken micro-blogging website Twitter in terms of daily users and has seen people spending more time on its app than on Facebook.
+  
+
+  "Success breeds imitators and it is only a matter of time that competing games and experiences hit the market from other games publishers," says Mehta.
+  
+
+  AR technology is already being used in defence for safe soldier training, in health care for visualising and de-risking complex medical procedures and manufacturing for complex engineering and repair tasks.
+  
+
+  "Going forward, we shall see consumer companies embracing this technology to help customers find their stores, create interesting and engaging in-store experiences as well as enhancing the brand value of their key products," Mehta notes. With advances in computer vision, high-resolution object and depth tracking and advancements in sensors, these are the most exciting times for AR.
+  
+
+  "While many companies work on various kinds of eye wear and head gear, it seems the breakout will happen with smartphones. The phones will lead the mass market use cases while the headgear will lead to deep, immersive and speciality experiences. The results might be underwhelming in the next three years, but in the next 10, I am confident AR will be all pervasive," Saraf points out.
+  
+
+  There have been some concerns about Pokemon Go users' security and safety. Well, this is the case with every new and evolving technology at the mass level which will be addressed over time.
+  
+
+  "There are industry reports pegging AR to be close to $100 billion market by 2020. We see more AR technology being adopted in edutainment, marketing, automotive and transportation, defence, retail, healthcare and tourism, to name some application areas," adds Thomas George, Senior Vice President and Head of CyberMedia Research (CMR), a market research firm.
+  
+
+  In the meanwhile, get ready to "capture" your Pokemon as it arrives in India in days to come and avoid the fake Pokemon Go downloads as it may put your smartphone data at risk.
+  
+var totalpage = 2,
+			curpage = 1,
+			slideval = 53247989;
+		var slider53247989 = {/*Object for multiplider*/
+			totalpage: 2,
+			curpage: 1,
+			slideval: 53247989,
+			totalslide : 6
+		}5 features we want in Pokemon Go of 6NextPrevPlay Slideshow5 features we want in Pokemon Go17 Jul, 2016Text: Vipansh Vasudeva, TNN
+
+Thanks to Pokemon Go, many people who previously spent their free time crushing candies in their bedrooms, are now leaving the comfort of their homes to catch Pokemon. Nintendo released the game to the public on July 6, 2016, and it has since garnered a huge fan following worldwide.
+
+Here are 5 features that we, as avid Pokemon trainers, would like to see added to Pokemon Go in the near future.Better Battles17 Jul, 2016As of now, the only instance of battles in Pokemon Go is if you head to a local Gym, and challenge the Pokemon left there by another trainer -- which is not exactly a true multiplayer experience.It would be fun if we could battle other trainers around us, and maybe receive rewards every time we defeat them. In all previous Pokemon titles on Nintendo consoles, the battle system included turn-based gameplay, where players could choose what attack to use next. However, in Pokemon Go, all we do is tap and swipe continuously on the opponent Pokemon.This could be made better by adding more gestures for specific attacks, so that the trainer has more control over the battle mechanics.Trading Pokemon17 Jul, 2016Previous iterations of Pokemon games allowed players to trade extra Pokemon with their friends in exchange for certain items, or more Pokemon. This is another major omission from Pokemon Go, and we hope the developer Niantic adds it to the game soon.It is quite common to end up with the same Pokemon twice, so if we could trade this extra Pokemon with our friends in exchange for, say, Pokecoins, or another Pokemon that we need in our collection.More social features17 Jul, 2016Another thing that we found missing from Pokemon Go is integration of social features, such as the ability to add friends, local leaderboards and public profiles.How cool would it be if Pokemon Go automatically brought in your friends from Facebook, Twitter and Google+ that are playing the game, and allowed us to view what Pokemon they have captured, or maybe even challenge them to a battle? It would make us want to spend a lot more time in the game than we already do, if thatâs even possible at this point.Pokemon Go should also allow players to head out in the search of Pokemon together with their friends, gaining extra XP for things they do in groups. With enough friends, we can even start our own local tournament, and battle friends to emerge as winners!Luckily, Niantic has already said that they are planning to add more social features to Pokemon Go in future updates.Push notifications17 Jul, 2016To catch nearby Pokemon in the game, we need to have the app open on our phones. This demands a lot of power, and the device ends up running out of battery very quickly.What could help in this scenario is if Niantic allowed the app to automatically send us push notifications whenever there are Pokemon or Pokestops around. This will make the experience much more fun, and we wonât have to worry about running out of juice anymore.Next
+
+
+

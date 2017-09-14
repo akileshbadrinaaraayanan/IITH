@@ -1,0 +1,13 @@
+URL : http://economictimes.indiatimes.com/news/company/corporate-trends/reliance-jios-4g-services-roll-out-on-august-15-report/articleshow/53693278.cms
+
+Title : Reliance Jio's 4G services roll out on August 15: Report - The Economic Times
+
+Meta Keywords : VoLTE,RIL,Reliance Jio,Mukesh Ambani,4G
+
+Date :  Aug 14, 2016, 08.34 AM IST
+
+Document ID : 664
+
+Content:
+  NEW DELHI: Mukesh Ambani-owned telco Reliance Jio Infocomm is likely to commercially roll out its 4G services from August 15, and it may launch free voice along with data services, Hindu Business Line reported, citing a note by Bank of America Merrill Lynch.     "When Jio commercially launches its telco services (expected on August 15) we expect the company to offer a differentiated offering," Bank of America Merrill Lynch said that it expects Jio to offer a differentiated offering, which will be unlimited VoLTE voice bundled with its data offering above Rs 300 per month.     It further said that VoLTE will impact voice revenues for the next 12-18 months.     Reliance Jio has soft launched its services for its employees in December last year. It opened up its network with preview data offer in May this year.     Jio has however extended its preview offer to select Samsung 4G smartphones and HP laptop users.     The company earlier this year had said that it was trying to ensure full network optimization before the complete rollout of its services, also citing it as the only reason for the delay in launch.     The company has also recently upgraded its Jiofi2 MiFi device to connect with more devices.     In its annual report for 2015-16, RIL said that Jio will have over 92,000 Evolved Node B (eNodeB) and over 1,00,000 small cells at launch at the time commercial launch.     The new 4G entrant already has a network of over 2,50,000 route km of optic fibre cable (OFC) for a full-IP network.     In addition to the fibre backhaul, the company said that extensive last mile fibre connectivity is being rolled out to address the fibre to the home potential.     Reliance also revealed that Jio has deployed advanced network technologies such as Software Defined Networking (SDN) and Network Functions Virtualisation (NFV), and its network is ready for future evolution of technology including transition to 5G with minimal additional capital expenditure in the network.  
+

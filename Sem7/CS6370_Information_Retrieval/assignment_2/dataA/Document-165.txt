@@ -1,0 +1,13 @@
+URL : http://economictimes.indiatimes.com/tech/internet/on-indian-market-google-has-its-head-in-the-public-clouds/articleshow/53661169.cms
+
+Title : On Indian market, Google has its head in the public clouds - The Economic Times
+
+Meta Keywords : public clouds,Microsoft Azure,Indian market,IBM,Google,Flipkart,ASEAN,Amazon Web Services
+
+Date :  Aug 12, 2016, 06.35 AM IST
+
+Document ID : 165
+
+Content:
+  MUMBAI: Google is looking to build its cloud platform sales team as the search giant looks at grabbing a piece of the Indian public cloud market.     The public cloud market is seeing a pitched battle as players such as Amazon Web Services and Microsoft Azure go head-to-head. IBM, whose public cloud arm is called Softlayer, is also in the fray.     "I can't tell you the number of people but I can say that we are hiring pretty aggressively. We are also working with our partners' ecosystem to build that momentum â these would be players like Wipro or Infosys," Rick Harshman, Managing Director of Asia Pacific & Japan for Google's cloud platform, told ET.     Harshman joined Google five months ago. He was previously Head of ASEAN at AWS, and was also responsible for building its India offering. Cloud companies are roping in senior talent to help get an edge in the market.     Former India Country head at EMC Global Services Ananthraman Balakrishnan joined AWS three months ago. IBM, whose Softlayer cloud is also in the market, hired Microsoft's Karan Bajwa last month.     Bajwa helped spearhead Microsoft Azure and Office 365 cloud offerings. However, Harshman does not believe that the public cloud market in India is a zero-sum game.     "The public cloud market in India is only $1 billion. We are just in the early stages, so it does not mean that for me to do well, someone has to do badly," Harshman said.     Google is making a concerted push to get a bigger portion of enterprise IT spends. At its Atmosphere event in Mumbai, the company showcased its enterprise users like Hero Motor and Flipkart. Hero and Flipkart use the company's Apps-for-Work.  
+

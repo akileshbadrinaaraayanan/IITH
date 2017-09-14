@@ -1,0 +1,13 @@
+URL : http://economictimes.indiatimes.com/tech/software/paytms-payment-bank-to-use-infosys-finacle-software-to-provide-its-services/articleshow/52664355.cms
+
+Title : Paytm's payment bank to use Infosys’ Finacle software to provide its services - The Economic Times
+
+Meta Keywords : Wipro,venkatramana gosavi,Tech Mahindra,Sun Pharma,Shinjini Kumar,Paytm payments bank,PayTM,Infosys,finance,Dilip Shanghvi,Cholamandalam Investment and Finance Company
+
+Date :  Jun 09, 2016, 04.03 AM IST
+
+Document ID : 206
+
+Content:
+  MUMBAI: Paytm's payment bank will use Infosys' Finacle core banking software to provide its services, the first of such deals that Infosys has closed since the banking licences were issued last year.     Infosys is also looking at the other winners of the licences to sell its banking software, the head of that division said.     "We are talking to the other winners. This is the first to be announced, but we are in talks with the others. The talks are in different stages," said Venkatramana Gosavi, vice-president at Infosys Finacle.     Last August, the RBI issued 11 in-principle licences to start payment banks. Last month, Tech Mahindra became the third licence winner to pull out of the business. Sun Pharma promoter Dilip Shanghvi and Cholamandalam Investment and Finance Company had already announced that they would not be setting up banks. Shinjini Kumar, CEO of Paytm Payments Bank, shrugged off concerns that the business model would not be viable.     "This is core for us. If this business is not core for you, and you are making a decision to do this along with other things, then this may not work for you," Kumar said.     Paytm's partnership with Infosys involves just the core-banking system. The Alibaba-backed wallet and ecommerce company will continue to develop the customer-facing mobile applications by itself. Wipro will be the system integrator for the service. Kumar said Paytm would likely use a mix of third-party software and technology the company builds itself for other modules of the bank.     "I function more as a buyer of technology, even internally. I ask my technology teams how they can bring say, an anti-money laundering solution that will suit our needs. And they work to very aggressive timelines," Kumar said.  
+

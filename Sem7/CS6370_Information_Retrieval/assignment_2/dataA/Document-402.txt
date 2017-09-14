@@ -1,0 +1,13 @@
+URL : http://economictimes.indiatimes.com/magazines/panache/how-to-edit-timestamps-in-google-photos/articleshow/49334296.cms
+
+Title : How to edit timestamps in Google photos - The Economic Times
+
+Meta Keywords : timestamps,Mobile Apps,Google photos,digital pictures
+
+Date : Oct 13, 2015, 12.36 PM IST
+
+Document ID : 402
+
+Content:
+  David Nield     If you're going to shove all of your digital pictures into Google Photos, it's essential that the time and date metadata associated with them is correct â otherwise your holiday snaps, photos of your children and gorgeous-looking images of sunsets are going to be much harder to find. The online service was originally missing a timestamp editor, but thankfully Google has added the feature.     If you're using Google Photos on the web, browse to whichever picture you want to edit, then click on the small info symbol (the letter i in a circle). You'll be shown the metadata associated with the picture, including its timestamp and any location information, and you can click on the time and date to make the required changes.     Unfortunately the same editing functionality hasn't found its way round to the mobile apps yet, but presumably it's on its way. The new option is particularly useful for all those old pictures stored on your computer that didn't have a time and date associated with them to begin with, assuming you can remember when they were taken.     
+

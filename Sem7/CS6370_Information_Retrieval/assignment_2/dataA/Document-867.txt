@@ -1,0 +1,13 @@
+URL : http://economictimes.indiatimes.com/mf/mf-news/understanding-risk-in-debt-mutual-funds/articleshow/53644293.cms
+
+Title : Understanding risk in debt mutual funds - The Economic Times
+
+Meta Keywords : MF investors,debt,Credit Rating
+
+Date :  Aug 11, 2016, 04.43 AM IST
+
+Document ID : 867
+
+Content:
+  1. What is interest rate risk? How could it impact debt mutual fund investors?     Interest rate movement poses a risk to debt MF investors. Interest rates typically rise when the economy is growing, and fall during economic downturns. Bond prices and interest rates are inversely related. When interest rates rise bond prices fall and vice versa.     Usually, longer the maturity, greater the degree of price volatility. Interest rate risk is present in all debt funds but the degree could vary. Gilt funds with longer maturity, carry higher interest rate while it is negligible or very low in liquid funds, which invest in securities of up to 91 days maturity.     2. How can credit rating of a company affect a debt fund?     A credit risk is the risk of default on a debt security that may arise from a borrower failing to make required payments. If a default were to happen in the security of a portfolio, it would impact the fund to the extent of its weight in the portfolio. Bonds are assigned a credit rating by agencies such as Crisil, Care and Icra based on their ability to finance debt obligations and their cash flows.     A corporate bond with an AAA equivalent rating is considered of the highest quality with negligible risk of default on payment of interest and repayment. Recently, Amtek Auto was downgraded by rating agencies, which affected debt fund schemes that had the paper in their portfolio. The fund manager regularly evaluates credit rating changes in the portfolio.     3. How crucial is liquidity & concentration for debt funds?     Concentration refers to the proportion of holding in one specific bond, higher the concentration in a particular security, higher the risk. For example, if you hold a 10 per cent exposure in a single security and if it defaults, the NAV (net asset value) of the fund would fall to that extent.     The fund manager also has to ensure the scheme is liquid to the extent that the fund has the ability to move in and out of a scheme without impacting its value or price. He ensures the scheme is liquid to manage large redemptions without having an impact on the NAV of the scheme.  
+
