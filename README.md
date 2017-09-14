@@ -1,8 +1,8 @@
-# IITH
+# IIT Hyderabad
 Repo containing source code, report, presentations of the important courses and projects I did at IIT H.
 
 ## Courses
-** Semester 4:**
+**Semester 4:**
 -  POPL.
 - Software Technologies.
 
@@ -25,7 +25,7 @@ Repo containing source code, report, presentations of the important courses and 
 - **Information Retrieval**.
 - Honors project.
 
-** Semester 8.**
+**Semester 8.**
 - **Topics in Deep Learning**.
 - Software Engineering.
 - Data Analytics and Intelligence.
