@@ -1,0 +1,52 @@
+Two phase simplex algorithm implemented by Akilesh B, CS13B1042
+
+This folder contains cs13b1042_assign2.py in which two phase algorithm is implemented.
+
+I solve a minimization problem:
+
+Minimize 	c.x
+subject to condition	A.x <= b
+
+I get the cost vector c, the matrix A and the vector b as input from the user. Care is taken to ensure that b >= 0, if not I multiply the whole equation by -1. While giving the input, in case if b is negative then multiply the whole equation by -1 and give values accordingly.
+
+Constraints are in the standard form. Standard form after adding surplus, slack and artificial variables.
+Conversion to standard form can be done from the website: http://www.phpsimplex.com/simplex/simplex.htm?l=en
+
+The input file should be specified in line 187 and 201 of the code
+----------------------------------------------------------------------------------------------
+input.txt
+
+-2.0 -3.0 0.0 0.0 0.0 0.0
+1.0 1.0 -1.0 0.0 0.0 1.0
+20.0 10.0 0.0 1.0 0.0 0.0
+-2.0 1.0 0.0 0.0 1.0 0.0
+3.0 80.0 0.0
+
+The first line is the cost vector c. The next three lines correspond the constraints, that is the matrix A.
+The last line is the vector b (ie the RHS of constraint equations).
+
+------------------------------------------------------------------------------------------------------
+
+In order to solve a maximization problem, negate the first line of input file (it changes from minimization to maximization).
+
+----------------------------------------------------------------------------------------------------------
+Sample output
+
+********************************
+[0.0, -2.0, -3.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[-83.0, -19.0, -12.0, 1.0, -1.0, -1.0, -1.0, 0.0, 0.0, 0.0]
+[3.0, 1.0, 1.0, -1.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0]
+[80.0, 20.0, 10.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, -2.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+********************************
+optimal = True
+unbounded = False
+********************************
+[16.0, 0.0, 0.0, 0.0, 0.2, 1.0, 0.0]
+[2.0, 1.0, 0.0, 0.0, 0.025, -0.25, 0.0]
+[3.0, 0.0, 0.0, 1.0, 0.07500000000000001, 0.25, -1.0]
+[4.0, 0.0, 1.0, 0.0, 0.05, 0.5, 0.0]
+********************************
+Optimal Cost = -16.0
+
+

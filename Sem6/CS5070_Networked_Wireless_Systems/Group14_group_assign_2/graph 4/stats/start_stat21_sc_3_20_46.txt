@@ -1,0 +1,4 @@
+2.256 /NodeList/2/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 3: start handover of UE with IMSI 9 RNTI 3 to CellId 2
+2.256 /NodeList/4/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 5: start handover of UE with IMSI 14 RNTI 3 to CellId 6
+2.656 /NodeList/7/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 8: start handover of UE with IMSI 23 RNTI 3 to CellId 7
+9.656 /NodeList/5/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 6: start handover of UE with IMSI 16 RNTI 1 to CellId 3

@@ -1,0 +1,11 @@
+1.88421 /NodeList/16/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 9: successful handover to CellId 4 with RNTI 4
+2.60421 /NodeList/10/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 3: successful handover to CellId 2 with RNTI 4
+2.60421 /NodeList/12/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 5: successful handover to CellId 3 with RNTI 4
+3.32421 /NodeList/26/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 19: successful handover to CellId 2 with RNTI 5
+3.80421 /NodeList/25/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 18: successful handover to CellId 5 with RNTI 4
+4.04421 /NodeList/19/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 12: successful handover to CellId 5 with RNTI 5
+5.00421 /NodeList/31/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 24: successful handover to CellId 7 with RNTI 4
+5.48421 /NodeList/13/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 6: successful handover to CellId 3 with RNTI 5
+5.48421 /NodeList/17/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 10: successful handover to CellId 3 with RNTI 6
+5.72421 /NodeList/14/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 7: successful handover to CellId 4 with RNTI 5
+9.12421 /NodeList/10/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 3: successful handover to CellId 1 with RNTI 4

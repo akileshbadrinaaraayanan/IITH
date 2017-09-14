@@ -1,0 +1,1 @@
+4.456 /NodeList/5/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 6: start handover of UE with IMSI 16 RNTI 1 to CellId 5

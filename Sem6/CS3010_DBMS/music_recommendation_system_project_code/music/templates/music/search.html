@@ -1,0 +1,25 @@
+<p>Results for Query {{ query }} </p>
+<p>-------------CHANNELS----------------</p>
+<br>
+{% if channels %}
+    {% for ch in channels %}
+        <p>Id : {{ ch.id }}</p>
+        <p>Thumbnail url : {{ ch.thumbnail_url }} </p>
+        <img src="{{ ch.thumbnail_url }}" width="300" height="300" />
+        <p>Channel Title : {{ ch.channelTitle }}</p>
+        <input type="button" value="Subscribe">
+        <br>
+    {% endfor %}
+{% endif %}
+<br><br>
+<p>------------VIDEOS------------------</p>
+<br>
+{% if videos %}
+    {% for v in   videos %}
+        <p>Id : {{ v.id }}</p>
+        <a href="/watch/{{ v.id }}" ><img src="{{ v.thumbnail_url }}" width="{{ v.thumbnail_width }}" height="{{ v.thumbnail_height }}" /></a>
+        <p>Title : {{ v.title }}</p>
+        <p>Channel Title : {{ v.channelTitle }}</p>
+        <br>
+    {% endfor %}
+{% endif %}

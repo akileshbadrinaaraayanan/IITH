@@ -1,0 +1,490 @@
+Waf: Entering directory `/home/akilesh/Downloads/ns-allinone-3.24/ns-3.24/build'
+Waf: Leaving directory `/home/akilesh/Downloads/ns-allinone-3.24/ns-3.24/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (2.258s)
+0.0202143 /NodeList/8/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 1: connected to CellId 1 with RNTI 3
+0.0202143 /NodeList/9/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 2: connected to CellId 1 with RNTI 2
+0.0202143 /NodeList/10/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 3: connected to CellId 1 with RNTI 1
+0.0202143 /NodeList/11/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 4: connected to CellId 2 with RNTI 2
+0.0202143 /NodeList/12/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 5: connected to CellId 2 with RNTI 1
+0.0202143 /NodeList/13/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 6: connected to CellId 2 with RNTI 3
+0.0202143 /NodeList/14/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 7: connected to CellId 3 with RNTI 2
+0.0202143 /NodeList/15/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 8: connected to CellId 3 with RNTI 1
+0.0202143 /NodeList/16/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 9: connected to CellId 3 with RNTI 3
+0.0202143 /NodeList/17/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 10: connected to CellId 4 with RNTI 2
+0.0202143 /NodeList/18/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 11: connected to CellId 4 with RNTI 3
+0.0202143 /NodeList/19/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 12: connected to CellId 4 with RNTI 1
+0.0202143 /NodeList/20/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 13: connected to CellId 5 with RNTI 2
+0.0202143 /NodeList/21/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 14: connected to CellId 5 with RNTI 3
+0.0202143 /NodeList/22/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 15: connected to CellId 5 with RNTI 1
+0.0202143 /NodeList/23/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 16: connected to CellId 6 with RNTI 1
+0.0202143 /NodeList/24/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 17: connected to CellId 6 with RNTI 3
+0.0202143 /NodeList/25/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 18: connected to CellId 6 with RNTI 2
+0.0202143 /NodeList/26/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 19: connected to CellId 7 with RNTI 3
+0.0202143 /NodeList/27/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 20: connected to CellId 7 with RNTI 2
+0.0202143 /NodeList/28/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 21: connected to CellId 7 with RNTI 1
+0.0202143 /NodeList/29/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 22: connected to CellId 8 with RNTI 3
+0.0202143 /NodeList/30/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 23: connected to CellId 8 with RNTI 1
+0.0202143 /NodeList/31/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 24: connected to CellId 8 with RNTI 2
+0.0202143 /NodeList/0/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 1: successful connection of UE with IMSI 1 RNTI 3
+0.0202143 /NodeList/0/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 1: successful connection of UE with IMSI 2 RNTI 2
+0.0202143 /NodeList/0/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 1: successful connection of UE with IMSI 3 RNTI 1
+0.0202143 /NodeList/1/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 2: successful connection of UE with IMSI 4 RNTI 2
+0.0202143 /NodeList/1/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 2: successful connection of UE with IMSI 5 RNTI 1
+0.0202143 /NodeList/1/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 2: successful connection of UE with IMSI 6 RNTI 3
+0.0202143 /NodeList/2/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 3: successful connection of UE with IMSI 7 RNTI 2
+0.0202143 /NodeList/2/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 3: successful connection of UE with IMSI 8 RNTI 1
+0.0202143 /NodeList/2/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 3: successful connection of UE with IMSI 9 RNTI 3
+0.0202143 /NodeList/3/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 4: successful connection of UE with IMSI 10 RNTI 2
+0.0202143 /NodeList/3/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 4: successful connection of UE with IMSI 11 RNTI 3
+0.0202143 /NodeList/3/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 4: successful connection of UE with IMSI 12 RNTI 1
+0.0202143 /NodeList/4/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 5: successful connection of UE with IMSI 13 RNTI 2
+0.0202143 /NodeList/4/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 5: successful connection of UE with IMSI 14 RNTI 3
+0.0202143 /NodeList/4/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 5: successful connection of UE with IMSI 15 RNTI 1
+0.0202143 /NodeList/5/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 6: successful connection of UE with IMSI 16 RNTI 1
+0.0202143 /NodeList/5/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 6: successful connection of UE with IMSI 17 RNTI 3
+0.0202143 /NodeList/5/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 6: successful connection of UE with IMSI 18 RNTI 2
+0.0202143 /NodeList/6/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 7: successful connection of UE with IMSI 19 RNTI 3
+0.0202143 /NodeList/6/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 7: successful connection of UE with IMSI 20 RNTI 2
+0.0202143 /NodeList/6/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 7: successful connection of UE with IMSI 21 RNTI 1
+0.0202143 /NodeList/7/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 8: successful connection of UE with IMSI 22 RNTI 3
+0.0202143 /NodeList/7/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 8: successful connection of UE with IMSI 23 RNTI 1
+0.0202143 /NodeList/7/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 8: successful connection of UE with IMSI 24 RNTI 2
+1.056 /NodeList/0/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 1: start handover of UE with IMSI 1 RNTI 3 to CellId 2
+1.056 /NodeList/8/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 1: previously connected to CellId 1 with RNTI 3, doing handover to CellId 2
+1.06021 /NodeList/8/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 1: successful handover to CellId 2 with RNTI 4
+1.06021 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 2: completed handover of UE with IMSI 1 RNTI 4
+1.256 /NodeList/5/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 6: start handover of UE with IMSI 16 RNTI 1 to CellId 5
+1.256 /NodeList/5/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 6: start handover of UE with IMSI 17 RNTI 3 to CellId 7
+1.256 /NodeList/23/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 16: previously connected to CellId 6 with RNTI 1, doing handover to CellId 5
+1.256 /NodeList/24/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 17: previously connected to CellId 6 with RNTI 3, doing handover to CellId 7
+1.26021 /NodeList/23/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 16: successful handover to CellId 5 with RNTI 4
+1.26021 /NodeList/24/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 17: successful handover to CellId 7 with RNTI 4
+1.26021 /NodeList/4/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 5: completed handover of UE with IMSI 16 RNTI 4
+1.26021 /NodeList/6/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 7: completed handover of UE with IMSI 17 RNTI 4
+1.456 /NodeList/4/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 5: start handover of UE with IMSI 15 RNTI 1 to CellId 6
+1.456 /NodeList/6/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 7: start handover of UE with IMSI 21 RNTI 1 to CellId 2
+1.456 /NodeList/22/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 15: previously connected to CellId 5 with RNTI 1, doing handover to CellId 6
+1.456 /NodeList/28/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 21: previously connected to CellId 7 with RNTI 1, doing handover to CellId 2
+1.46021 /NodeList/28/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 21: successful handover to CellId 2 with RNTI 5
+1.46021 /NodeList/22/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 15: successful handover to CellId 6 with RNTI 4
+1.46021 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 2: completed handover of UE with IMSI 21 RNTI 5
+1.46021 /NodeList/5/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 6: completed handover of UE with IMSI 15 RNTI 4
+1.856 /NodeList/2/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 3: start handover of UE with IMSI 8 RNTI 1 to CellId 2
+1.856 /NodeList/3/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 4: start handover of UE with IMSI 12 RNTI 1 to CellId 3
+1.856 /NodeList/15/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 8: previously connected to CellId 3 with RNTI 1, doing handover to CellId 2
+1.856 /NodeList/19/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 12: previously connected to CellId 4 with RNTI 1, doing handover to CellId 3
+1.86021 /NodeList/15/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 8: successful handover to CellId 2 with RNTI 6
+1.86021 /NodeList/19/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 12: successful handover to CellId 3 with RNTI 4
+1.86021 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 2: completed handover of UE with IMSI 8 RNTI 6
+1.86021 /NodeList/2/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 3: completed handover of UE with IMSI 12 RNTI 4
+2.256 /NodeList/6/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 7: start handover of UE with IMSI 20 RNTI 2 to CellId 6
+2.256 /NodeList/27/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 20: previously connected to CellId 7 with RNTI 2, doing handover to CellId 6
+2.26021 /NodeList/27/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 20: successful handover to CellId 6 with RNTI 5
+2.26021 /NodeList/5/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 6: completed handover of UE with IMSI 20 RNTI 5
+2.656 /NodeList/3/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 4: start handover of UE with IMSI 11 RNTI 3 to CellId 5
+2.656 /NodeList/18/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 11: previously connected to CellId 4 with RNTI 3, doing handover to CellId 5
+2.66021 /NodeList/18/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 11: successful handover to CellId 5 with RNTI 5
+2.66021 /NodeList/4/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 5: completed handover of UE with IMSI 11 RNTI 5
+2.856 /NodeList/2/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 3: start handover of UE with IMSI 7 RNTI 2 to CellId 4
+2.856 /NodeList/14/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 7: previously connected to CellId 3 with RNTI 2, doing handover to CellId 4
+2.86021 /NodeList/14/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 7: successful handover to CellId 4 with RNTI 4
+2.86021 /NodeList/3/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 4: completed handover of UE with IMSI 7 RNTI 4
+3.056 /NodeList/7/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 8: start handover of UE with IMSI 24 RNTI 2 to CellId 1
+3.056 /NodeList/31/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 24: previously connected to CellId 8 with RNTI 2, doing handover to CellId 1
+3.06021 /NodeList/31/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 24: successful handover to CellId 1 with RNTI 4
+3.06021 /NodeList/0/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 1: completed handover of UE with IMSI 24 RNTI 4
+3.256 /NodeList/6/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 7: start handover of UE with IMSI 17 RNTI 4 to CellId 2
+3.256 /NodeList/24/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 17: previously connected to CellId 7 with RNTI 4, doing handover to CellId 2
+3.26021 /NodeList/24/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 17: successful handover to CellId 2 with RNTI 7
+3.26021 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 2: completed handover of UE with IMSI 17 RNTI 7
+3.456 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 2: start handover of UE with IMSI 5 RNTI 1 to CellId 8
+3.456 /NodeList/2/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 3: start handover of UE with IMSI 9 RNTI 3 to CellId 2
+3.456 /NodeList/12/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 5: previously connected to CellId 2 with RNTI 1, doing handover to CellId 8
+3.456 /NodeList/16/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 9: previously connected to CellId 3 with RNTI 3, doing handover to CellId 2
+3.46021 /NodeList/16/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 9: successful handover to CellId 2 with RNTI 8
+3.46021 /NodeList/12/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 5: successful handover to CellId 8 with RNTI 4
+3.46021 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 2: completed handover of UE with IMSI 9 RNTI 8
+3.46021 /NodeList/7/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 8: completed handover of UE with IMSI 5 RNTI 4
+4.056 /NodeList/5/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 6: start handover of UE with IMSI 20 RNTI 5 to CellId 3
+4.056 /NodeList/27/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 20: previously connected to CellId 6 with RNTI 5, doing handover to CellId 3
+4.06021 /NodeList/27/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 20: successful handover to CellId 3 with RNTI 5
+4.06021 /NodeList/2/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 3: completed handover of UE with IMSI 20 RNTI 5
+4.256 /NodeList/2/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 3: start handover of UE with IMSI 12 RNTI 4 to CellId 6
+4.256 /NodeList/19/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 12: previously connected to CellId 3 with RNTI 4, doing handover to CellId 6
+4.26021 /NodeList/19/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 12: successful handover to CellId 6 with RNTI 6
+4.26021 /NodeList/5/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 6: completed handover of UE with IMSI 12 RNTI 6
+4.656 /NodeList/3/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 4: start handover of UE with IMSI 10 RNTI 2 to CellId 3
+4.656 /NodeList/17/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 10: previously connected to CellId 4 with RNTI 2, doing handover to CellId 3
+4.66021 /NodeList/17/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 10: successful handover to CellId 3 with RNTI 6
+4.66021 /NodeList/2/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 3: completed handover of UE with IMSI 10 RNTI 6
+4.856 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 2: start handover of UE with IMSI 6 RNTI 3 to CellId 3
+4.856 /NodeList/13/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 6: previously connected to CellId 2 with RNTI 3, doing handover to CellId 3
+4.86021 /NodeList/13/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 6: successful handover to CellId 3 with RNTI 7
+4.86021 /NodeList/2/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 3: completed handover of UE with IMSI 6 RNTI 7
+5.056 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 2: start handover of UE with IMSI 17 RNTI 7 to CellId 3
+5.056 /NodeList/24/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 17: previously connected to CellId 2 with RNTI 7, doing handover to CellId 3
+5.06021 /NodeList/24/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 17: successful handover to CellId 3 with RNTI 8
+5.06021 /NodeList/2/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 3: completed handover of UE with IMSI 17 RNTI 8
+5.456 /NodeList/7/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 8: start handover of UE with IMSI 5 RNTI 4 to CellId 1
+5.456 /NodeList/12/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 5: previously connected to CellId 8 with RNTI 4, doing handover to CellId 1
+5.46021 /NodeList/12/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 5: successful handover to CellId 1 with RNTI 5
+5.46021 /NodeList/0/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 1: completed handover of UE with IMSI 5 RNTI 5
+6.056 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 2: start handover of UE with IMSI 8 RNTI 6 to CellId 3
+6.056 /NodeList/6/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 7: start handover of UE with IMSI 19 RNTI 3 to CellId 2
+6.056 /NodeList/15/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 8: previously connected to CellId 2 with RNTI 6, doing handover to CellId 3
+6.056 /NodeList/26/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 19: previously connected to CellId 7 with RNTI 3, doing handover to CellId 2
+6.06021 /NodeList/26/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 19: successful handover to CellId 2 with RNTI 9
+6.06021 /NodeList/15/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 8: successful handover to CellId 3 with RNTI 9
+6.06021 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 2: completed handover of UE with IMSI 19 RNTI 9
+6.06021 /NodeList/2/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 3: completed handover of UE with IMSI 8 RNTI 9
+6.256 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 2: start handover of UE with IMSI 9 RNTI 8 to CellId 1
+6.256 /NodeList/2/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 3: start handover of UE with IMSI 17 RNTI 8 to CellId 6
+6.256 /NodeList/16/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 9: previously connected to CellId 2 with RNTI 8, doing handover to CellId 1
+6.256 /NodeList/24/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 17: previously connected to CellId 3 with RNTI 8, doing handover to CellId 6
+6.26021 /NodeList/16/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 9: successful handover to CellId 1 with RNTI 6
+6.26021 /NodeList/24/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 17: successful handover to CellId 6 with RNTI 7
+6.26021 /NodeList/0/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 1: completed handover of UE with IMSI 9 RNTI 6
+6.26021 /NodeList/5/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 6: completed handover of UE with IMSI 17 RNTI 7
+6.856 /NodeList/0/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 1: start handover of UE with IMSI 3 RNTI 1 to CellId 2
+6.856 /NodeList/10/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 3: previously connected to CellId 1 with RNTI 1, doing handover to CellId 2
+6.86021 /NodeList/10/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 3: successful handover to CellId 2 with RNTI 10
+6.86021 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 2: completed handover of UE with IMSI 3 RNTI 10
+7.456 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 2: start handover of UE with IMSI 4 RNTI 2 to CellId 1
+7.456 /NodeList/11/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 4: previously connected to CellId 2 with RNTI 2, doing handover to CellId 1
+7.46021 /NodeList/11/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 4: successful handover to CellId 1 with RNTI 7
+7.46021 /NodeList/0/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 1: completed handover of UE with IMSI 4 RNTI 7
+7.656 /NodeList/0/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 1: start handover of UE with IMSI 9 RNTI 6 to CellId 2
+7.656 /NodeList/16/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 9: previously connected to CellId 1 with RNTI 6, doing handover to CellId 2
+7.66021 /NodeList/16/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 9: successful handover to CellId 2 with RNTI 11
+7.66021 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 2: completed handover of UE with IMSI 9 RNTI 11
+7.856 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 2: start handover of UE with IMSI 19 RNTI 9 to CellId 7
+7.856 /NodeList/2/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 3: start handover of UE with IMSI 20 RNTI 5 to CellId 7
+7.856 /NodeList/26/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 19: previously connected to CellId 2 with RNTI 9, doing handover to CellId 7
+7.856 /NodeList/27/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 20: previously connected to CellId 3 with RNTI 5, doing handover to CellId 7
+7.86021 /NodeList/26/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 19: successful handover to CellId 7 with RNTI 5
+7.86021 /NodeList/27/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 20: successful handover to CellId 7 with RNTI 6
+7.86021 /NodeList/6/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 7: completed handover of UE with IMSI 19 RNTI 5
+7.86021 /NodeList/6/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 7: completed handover of UE with IMSI 20 RNTI 6
+8.456 /NodeList/0/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 1: start handover of UE with IMSI 24 RNTI 4 to CellId 2
+8.456 /NodeList/31/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 24: previously connected to CellId 1 with RNTI 4, doing handover to CellId 2
+8.46021 /NodeList/31/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 24: successful handover to CellId 2 with RNTI 12
+8.46021 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 2: completed handover of UE with IMSI 24 RNTI 12
+8.656 /NodeList/0/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 1: start handover of UE with IMSI 5 RNTI 5 to CellId 2
+8.656 /NodeList/12/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 5: previously connected to CellId 1 with RNTI 5, doing handover to CellId 2
+8.66021 /NodeList/12/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 5: successful handover to CellId 2 with RNTI 13
+8.66021 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 2: completed handover of UE with IMSI 5 RNTI 13
+8.856 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 2: start handover of UE with IMSI 1 RNTI 4 to CellId 7
+8.856 /NodeList/8/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 1: previously connected to CellId 2 with RNTI 4, doing handover to CellId 7
+8.86021 /NodeList/8/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 1: successful handover to CellId 7 with RNTI 7
+8.86021 /NodeList/6/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 7: completed handover of UE with IMSI 1 RNTI 7
+9.456 /NodeList/0/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 1: start handover of UE with IMSI 4 RNTI 7 to CellId 8
+9.456 /NodeList/2/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 3: start handover of UE with IMSI 6 RNTI 7 to CellId 2
+9.456 /NodeList/11/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 4: previously connected to CellId 1 with RNTI 7, doing handover to CellId 8
+9.456 /NodeList/13/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 6: previously connected to CellId 3 with RNTI 7, doing handover to CellId 2
+9.46021 /NodeList/13/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 6: successful handover to CellId 2 with RNTI 14
+9.46021 /NodeList/11/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 4: successful handover to CellId 8 with RNTI 5
+9.46021 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 2: completed handover of UE with IMSI 6 RNTI 14
+9.46021 /NodeList/7/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 8: completed handover of UE with IMSI 4 RNTI 5
+9.856 /NodeList/5/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 6: start handover of UE with IMSI 12 RNTI 6 to CellId 3
+9.856 /NodeList/6/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 7: start handover of UE with IMSI 19 RNTI 5 to CellId 2
+9.856 /NodeList/7/DeviceList/0/LteEnbRrc/HandoverStart eNB CellId 8: start handover of UE with IMSI 23 RNTI 1 to CellId 6
+9.856 /NodeList/19/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 12: previously connected to CellId 6 with RNTI 6, doing handover to CellId 3
+9.856 /NodeList/26/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 19: previously connected to CellId 7 with RNTI 5, doing handover to CellId 2
+9.856 /NodeList/30/DeviceList/0/LteUeRrc/HandoverStart UE IMSI 23: previously connected to CellId 8 with RNTI 1, doing handover to CellId 6
+9.86021 /NodeList/26/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 19: successful handover to CellId 2 with RNTI 15
+9.86021 /NodeList/19/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 12: successful handover to CellId 3 with RNTI 10
+9.86021 /NodeList/30/DeviceList/0/LteUeRrc/HandoverEndOk UE IMSI 23: successful handover to CellId 6 with RNTI 8
+9.86021 /NodeList/1/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 2: completed handover of UE with IMSI 19 RNTI 15
+9.86021 /NodeList/2/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 3: completed handover of UE with IMSI 12 RNTI 10
+9.86021 /NodeList/5/DeviceList/0/LteEnbRrc/HandoverEndOk eNB CellId 6: completed handover of UE with IMSI 23 RNTI 8
+UDP
+FlowID: 1 (UDP 1.0.0.2 / 49153 --> 7.0.0.2 / 10001)
+  Tx Bytes: 1526472
+  Rx Bytes: 1115440
+  Tx Packets: 999
+  Rx Packets: 730
+  Time LastRxPacket: 9.997s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.269269
+  Throughput: 892620bps
+  Mean{Delay}: 0.046937
+  Mean{Jitter}: 0.00422466
+UDP
+FlowID: 2 (UDP 1.0.0.2 / 49154 --> 7.0.0.3 / 10002)
+  Tx Bytes: 1526472
+  Rx Bytes: 1285048
+  Tx Packets: 999
+  Rx Packets: 841
+  Time LastRxPacket: 9.978s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.158158
+  Throughput: 1.03031e+06bps
+  Mean{Delay}: 0.056868
+  Mean{Jitter}: 0.00498216
+UDP
+FlowID: 3 (UDP 1.0.0.2 / 49155 --> 7.0.0.4 / 10003)
+  Tx Bytes: 1526472
+  Rx Bytes: 904576
+  Tx Packets: 999
+  Rx Packets: 592
+  Time LastRxPacket: 9.302s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.407407
+  Throughput: 777963bps
+  Mean{Delay}: 0.0459544
+  Mean{Jitter}: 0.00364696
+UDP
+FlowID: 4 (UDP 1.0.0.2 / 49156 --> 7.0.0.5 / 10004)
+  Tx Bytes: 1526472
+  Rx Bytes: 976392
+  Tx Packets: 999
+  Rx Packets: 639
+  Time LastRxPacket: 9.862s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.36036
+  Throughput: 792044bps
+  Mean{Delay}: 0.0580016
+  Mean{Jitter}: 0.00642567
+UDP
+FlowID: 5 (UDP 1.0.0.2 / 49157 --> 7.0.0.6 / 10005)
+  Tx Bytes: 1526472
+  Rx Bytes: 950416
+  Tx Packets: 999
+  Rx Packets: 622
+  Time LastRxPacket: 9.991s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.377377
+  Throughput: 761018bps
+  Mean{Delay}: 0.0338039
+  Mean{Jitter}: 0.00420579
+UDP
+FlowID: 6 (UDP 1.0.0.2 / 49158 --> 7.0.0.7 / 10006)
+  Tx Bytes: 1526472
+  Rx Bytes: 650928
+  Tx Packets: 999
+  Rx Packets: 426
+  Time LastRxPacket: 9.93s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.573574
+  Throughput: 524413bps
+  Mean{Delay}: 0.110833
+  Mean{Jitter}: 0.0103545
+UDP
+FlowID: 7 (UDP 1.0.0.2 / 49159 --> 7.0.0.8 / 10007)
+  Tx Bytes: 1526472
+  Rx Bytes: 1370616
+  Tx Packets: 999
+  Rx Packets: 897
+  Time LastRxPacket: 9.941s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.102102
+  Throughput: 1.103e+06bps
+  Mean{Delay}: 0.0254571
+  Mean{Jitter}: 0.00143255
+UDP
+FlowID: 8 (UDP 1.0.0.2 / 49160 --> 7.0.0.9 / 10008)
+  Tx Bytes: 1526472
+  Rx Bytes: 197112
+  Tx Packets: 999
+  Rx Packets: 129
+  Time LastRxPacket: 9.526s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.870871
+  Throughput: 165536bps
+  Mean{Delay}: 0.147256
+  Mean{Jitter}: 0.0280543
+UDP
+FlowID: 9 (UDP 1.0.0.2 / 49161 --> 7.0.0.10 / 10009)
+  Tx Bytes: 1526472
+  Rx Bytes: 968752
+  Tx Packets: 999
+  Rx Packets: 634
+  Time LastRxPacket: 9.992s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.365365
+  Throughput: 775622bps
+  Mean{Delay}: 0.0470268
+  Mean{Jitter}: 0.00583123
+UDP
+FlowID: 10 (UDP 1.0.0.2 / 49162 --> 7.0.0.11 / 10010)
+  Tx Bytes: 1526472
+  Rx Bytes: 1408816
+  Tx Packets: 999
+  Rx Packets: 922
+  Time LastRxPacket: 9.901s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.0770771
+  Throughput: 1.13832e+06bps
+  Mean{Delay}: 0.0234826
+  Mean{Jitter}: 0.00160412
+UDP
+FlowID: 11 (UDP 1.0.0.2 / 49163 --> 7.0.0.12 / 10011)
+  Tx Bytes: 1526472
+  Rx Bytes: 1228512
+  Tx Packets: 999
+  Rx Packets: 804
+  Time LastRxPacket: 9.995s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.195195
+  Throughput: 983301bps
+  Mean{Delay}: 0.0503259
+  Mean{Jitter}: 0.00475124
+UDP
+FlowID: 12 (UDP 1.0.0.2 / 49164 --> 7.0.0.13 / 10012)
+  Tx Bytes: 1526472
+  Rx Bytes: 979448
+  Tx Packets: 999
+  Rx Packets: 641
+  Time LastRxPacket: 9.974s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.358358
+  Throughput: 785601bps
+  Mean{Delay}: 0.0465601
+  Mean{Jitter}: 0.00534633
+UDP
+FlowID: 13 (UDP 1.0.0.2 / 49165 --> 7.0.0.14 / 10013)
+  Tx Bytes: 1526472
+  Rx Bytes: 1139888
+  Tx Packets: 999
+  Rx Packets: 746
+  Time LastRxPacket: 9.902s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.253253
+  Throughput: 920936bps
+  Mean{Delay}: 0.0660456
+  Mean{Jitter}: 0.00574799
+UDP
+FlowID: 14 (UDP 1.0.0.2 / 49166 --> 7.0.0.15 / 10014)
+  Tx Bytes: 1526472
+  Rx Bytes: 901520
+  Tx Packets: 999
+  Rx Packets: 590
+  Time LastRxPacket: 9.992s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.409409
+  Throughput: 721793bps
+  Mean{Delay}: 0.0992915
+  Mean{Jitter}: 0.00772712
+UDP
+FlowID: 15 (UDP 1.0.0.2 / 49167 --> 7.0.0.16 / 10015)
+  Tx Bytes: 1526472
+  Rx Bytes: 583696
+  Tx Packets: 999
+  Rx Packets: 382
+  Time LastRxPacket: 9.969s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.617618
+  Throughput: 468409bps
+  Mean{Delay}: 0.101246
+  Mean{Jitter}: 0.0113455
+UDP
+FlowID: 16 (UDP 1.0.0.2 / 49168 --> 7.0.0.17 / 10016)
+  Tx Bytes: 1526472
+  Rx Bytes: 1034456
+  Tx Packets: 999
+  Rx Packets: 677
+  Time LastRxPacket: 9.994s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.322322
+  Throughput: 828062bps
+  Mean{Delay}: 0.0919217
+  Mean{Jitter}: 0.00759823
+UDP
+FlowID: 17 (UDP 1.0.0.2 / 49169 --> 7.0.0.18 / 10017)
+  Tx Bytes: 1526472
+  Rx Bytes: 791504
+  Tx Packets: 999
+  Rx Packets: 518
+  Time LastRxPacket: 9.916s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.481481
+  Throughput: 638567bps
+  Mean{Delay}: 0.0549517
+  Mean{Jitter}: 0.00827027
+UDP
+FlowID: 18 (UDP 1.0.0.2 / 49170 --> 7.0.0.19 / 10018)
+  Tx Bytes: 1526472
+  Rx Bytes: 554664
+  Tx Packets: 999
+  Rx Packets: 363
+  Time LastRxPacket: 9.525s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.636637
+  Throughput: 465860bps
+  Mean{Delay}: 0.0857934
+  Mean{Jitter}: 0.0110331
+UDP
+FlowID: 19 (UDP 1.0.0.2 / 49171 --> 7.0.0.20 / 10019)
+  Tx Bytes: 1526472
+  Rx Bytes: 1113912
+  Tx Packets: 999
+  Rx Packets: 729
+  Time LastRxPacket: 9.993s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.27027
+  Throughput: 891754bps
+  Mean{Delay}: 0.0278244
+  Mean{Jitter}: 0.00170782
+UDP
+FlowID: 20 (UDP 1.0.0.2 / 49172 --> 7.0.0.21 / 10020)
+  Tx Bytes: 1526472
+  Rx Bytes: 896936
+  Tx Packets: 999
+  Rx Packets: 587
+  Time LastRxPacket: 9.996s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.412412
+  Throughput: 717836bps
+  Mean{Delay}: 0.0476814
+  Mean{Jitter}: 0.00486882
+UDP
+FlowID: 21 (UDP 1.0.0.2 / 49173 --> 7.0.0.22 / 10021)
+  Tx Bytes: 1526472
+  Rx Bytes: 450760
+  Tx Packets: 999
+  Rx Packets: 295
+  Time LastRxPacket: 9.018s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.704705
+  Throughput: 399876bps
+  Mean{Delay}: 0.121837
+  Mean{Jitter}: 0.0128915
+UDP
+FlowID: 22 (UDP 1.0.0.2 / 49174 --> 7.0.0.23 / 10022)
+  Tx Bytes: 1526472
+  Rx Bytes: 1236152
+  Tx Packets: 999
+  Rx Packets: 809
+  Time LastRxPacket: 9.912s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.19019
+  Throughput: 997701bps
+  Mean{Delay}: 0.07033
+  Mean{Jitter}: 0.00752287
+UDP
+FlowID: 23 (UDP 1.0.0.2 / 49175 --> 7.0.0.24 / 10023)
+  Tx Bytes: 1526472
+  Rx Bytes: 681488
+  Tx Packets: 999
+  Rx Packets: 446
+  Time LastRxPacket: 9.873s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.553554
+  Throughput: 552203bps
+  Mean{Delay}: 0.0617825
+  Mean{Jitter}: 0.00660987
+UDP
+FlowID: 24 (UDP 1.0.0.2 / 49176 --> 7.0.0.25 / 10024)
+  Tx Bytes: 1526472
+  Rx Bytes: 925968
+  Tx Packets: 999
+  Rx Packets: 606
+  Time LastRxPacket: 9.981s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.393393
+  Throughput: 742185bps
+  Mean{Delay}: 0.0486007
+  Mean{Jitter}: 0.00511056
+100	10	ns3::PfFfMacScheduler	ns3::A3RsrpHandoverAlgorithm	
+Average throughput= 753122 bps

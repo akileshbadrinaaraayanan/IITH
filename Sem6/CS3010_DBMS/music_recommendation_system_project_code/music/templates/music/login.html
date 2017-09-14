@@ -1,0 +1,16 @@
+<p>Hi ,Please Login.</p>
+
+{% if error_message %}
+    <p><strong>{{ error_message }}</strong></p>
+{% endif %}
+
+<form action="{% url 'music:validate' %}" method="post">
+    {% csrf_token %}
+    <p>Username:</p>
+    <input type="text" placeholder="username" name="username">
+    <br>
+    <p>Password:</p>
+    <input type="password" placeholder="password" name="password">
+    <br><br>
+    <input type="submit" value="Login">
+</form>

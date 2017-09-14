@@ -1,0 +1,47 @@
+Group assignment 2     -  	 Group 14: Arjun V Anand, CS13B1041 and Akilesh B, CS13B1042
+--------------------------------------------------------------------------------------------------------------
+
+This assignment contains 6 parts:
+
+Graph 1:
+
+This the REM Plot. Run the Group14-asg2-rem.cc (./waf --run scratch/Group14-asg2-rem ) file to generate rem.out file. Now, this can be plotted using the remplot.pl GNU script  -   gnuplot remplot.pl 
+This will generate Rem.png which is the Radio Environment Map for the given scenario.
+
+
+Graph 2-3:
+
+./waf --run "scratch/Group14-asg2 --speed=20 --handAlgo=ns3::A3RsrpHandoverAlgorithm --RngRun=42"
+
+UE mobility speed = 20 m/s. handoveralgo is A3RsrpHandoverAlgorithm FOR RngRun = 42.
+
+For each handoveralgo we get, DlPdcpStats.txt and DlRsrpSinrStats.txt.
+
+Since, we need to plot the SINR and Throughput values only for UE with highest number of handovers, we have to parse these stat files.
+
+For graph 3
+
+awk '$4==1' DlPdcpStats_sc_20_42.txt > thr_20_1.txt
+
+awk '{print $2, $10*0.000160}' thr_20_1.txt > thr_20_1_final.txt
+
+For graph 2
+
+awk '$3==1' DlRsrpSinrStats_sc_20_42.txt > sinr_20_1.txt
+
+awk '{print $1, 10*log($5)/2.303}' sinr_20_1.txt > sinr_20_1_final.txt
+
+In order to plot the graphs, plot_sinr.pl and plot_throughput.pl are used 
+gnuplot plot_sinr.pl, generates the SINR plot for all the 4 schedulers.
+gnuplot plot_throughput.pl, generates the throughput plot for all the 4 schedulers.
+
+
+Graphs 4-6:
+
+We store the output of our program in different stat files, through which we later identify the best case of hysteresis and offset.
+
+
+
+
+
+

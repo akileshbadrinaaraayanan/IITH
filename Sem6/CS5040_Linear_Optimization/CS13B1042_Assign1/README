@@ -1,0 +1,6 @@
+This folder contains cs13b1042_assign1.py which is the implementation of gaussian algorithm to find RREF and print the solution if it exists.
+
+How to run?
+
+
+python cs13b1042_assign1.py (It takes input from file input.txt)

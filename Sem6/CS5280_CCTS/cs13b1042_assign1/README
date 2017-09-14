@@ -1,0 +1,11 @@
+How to run?
+
+g++ cs13b1042_bocc.cpp -std=c++11 -lpthread
+
+g++ cs13b1042_focc.cpp -std=c++11 -lpthread
+
+This folder contains report, two c++ files, plots obtained and input.txt file.
+
+Both the programs take input from a file named input.txt which has paramters n, m, constVal and lambda.
+
+Implemented by Akilesh B, CS13B1042

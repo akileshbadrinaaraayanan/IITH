@@ -1,0 +1,58 @@
+Face generation using convolutional generative adversarial networks - General Instructions and How to run on GPU server?
+------------------------------------------------------------------------------------------------------------------------------------
+THEANO and pylearn2 should be installed, along with corresponding version of cudnn (cudnn-6.5-linux-x64-v2.tgz)
+--------------------------------------------------------------------------------------------------------------------------------------
+Step 1: Download the lfwcrop color dataset.
+
+It consists of faces folder which contains all the images. These images are 64 x 64. We require 32 X 32 images for training. To convert this, run the script convert32.py. Place the lfwcrop_color inside the pylearn2/adversarial/data/ directory. This also contains the attributes which we used inside the attributes directory. The text files containing the images included in the training for different models are also present here. 
+
+Now the various models are present inside pylearn2/adversarial/models directory. 
+They are lfwcrop_convolutional.yaml, lfwcrop_convolutional.morefilters.yaml, lfwcrop_convolutional_conditional.nonoise.yaml 
+--------------------------------------------------------------------------------------------------------------------------------------------
+How to train? 
+
+run pylearn2/scripts/train.py on different yaml files. 
+
+For example:
+
+THEANO_FLAGS='floatX=float32,device=gpu5,nvcc.fastmath=True' python pylearn2/scripts/train.py adversarial/models/lfwcrop_convolutional.yaml --time-budget=36000
+
+The models will be saved as .pkl files.
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+After training - to generate samples from the trained model:
+
+To generate samples from conditional model.
+Run save_samples_lfw_conditional.py on different models. The models and output directory where the generated images will be stored should be given as arguments. 
+
+Example for conditional GAN model: 
+THEANO_FLAGS='floatX=float32,device=gpu2,nvcc.fastmath=True' python sampler/save_samples_lfw_conditional.py /home/cs13b1042/cgan/pylearn2/adversarial/mymodels/lfwcrop_convolutional_conditional.nonoise_750.pkl  output_750
+
+To generate samples from conditional model.
+Run show_samples_lfw.py on different models. The models should be given as argument. 
+
+Example for GAN model:
+THEANO_FLAGS='floatX=float32,device=gpu2,nvcc.fastmath=True' python adversarial/sampler/show_samples_lfw.py adversarial/mymodels/lfwcrop_convolutional_270.pkl
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Negative Log Likelihood Estimation
+
+Run parzen_ll.py giving the models, dataset and number of samples as arguments
+
+Example for conditional GAN model: 
+THEANO_FLAGS='floatX=float32,device=gpu1,nvcc.fastmath=True' python parzen_ll.py -p=/home/cs13b1042/cgan/pylearn2/adversarial/mymodels/lfwcrop_convolutional_110.pkl -d=lfwcrop --num_samples=3000
+
+Example for GAN model:
+THEANO_FLAGS='floatX=float32,device=gpu1,nvcc.fastmath=True' python parzen_ll.py -p=/home/cs13b1042/cgan/pylearn2/adversarial/mymodels/lfwcrop_convolutional_conditional.nonoise_130.pkl  -d=lfwcrop --num_samples=3000
+-------------------------------------------------------------------------------------------------------------------------------------------
+Running it on GPU server
+
+All files required to train, generate samples and estimate the log likelihood are available on institute GPU server.
+
+ssh cs13b1042@192.168.136.10
+
+password: cs13b1042
+
+The cgan/pylearn2 folder contains all required files. Follow the above instructions to run the code and check. 
+The models which we trained and saved at different epochs are available at /home/cs13b1042/cgan/pylearn2/adversarial/mymodels directory
+--------------------------------------------------------------------------------------------------------------------------------------------- 

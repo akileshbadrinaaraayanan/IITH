@@ -1,0 +1,233 @@
+!obj:pylearn2.train.Train {
+  dataset: &train !obj:adversarial.lfw.dataset.LFW {
+    axes: ['c', 0, 1, 'b'],
+    gcn: 55.,
+    lfw_path: '/home/cs13b1042/cgan/pylearn2/adversarial/data/lfwcrop_color/faces32',
+    filelist_path: '/home/cs13b1042/cgan/pylearn2/adversarial/data/lfwcrop_color/filelist.train.ids.txt',
+    embedding_file: '/home/cs13b1042/cgan/pylearn2/adversarial/data/lfwcrop_color/embeddings/LFW_attributes_50d.npz',
+    img_shape: [3, 32, 32],
+    # which_set: 'train',
+#   start: 0,
+#   stop: 16
+  },
+  model: !obj:adversarial.conditional.ConditionalAdversaryPair {
+    shrink_d: 1.,
+    data_space: &data_space !obj:pylearn2.space.Conv2DSpace {
+      shape: [32, 32],
+      num_channels: 3,
+      axes: ['c', 0, 1, 'b'],
+    },
+    condition_space: &condition_space !obj:pylearn2.space.VectorSpace {
+      dim: 50,
+      dtype: 'float32'
+    },
+    generator: !obj:adversarial.conditional.ConditionalGenerator {
+      condition_distribution: &condition_distribution !obj:adversarial.distributions.KernelDensityEstimateDistribution {
+        X: !obj:adversarial.util.load_numpy_obj {
+          file: '/home/cs13b1042/cgan/pylearn2/adversarial/data/lfwcrop_color/embeddings/LFW_attributes_50d.npz',
+          key: 'arr_0',
+        },
+        bandwidth: 1,
+        space: *condition_space,
+      },
+      mlp: !obj:pylearn2.models.mlp.MLP {
+        layers: [
+          !obj:pylearn2.models.mlp.RectifiedLinear {
+            layer_name: 'gh0',
+            dim: 8000,
+            irange: 0.005,
+            #max_col_norm: 1.9365,
+          },
+          !obj:pylearn2.models.mlp.Sigmoid {
+            layer_name: 'h1',
+            dim: 8000,
+            irange: .05,
+            #max_col_norm: 1.9365,
+          },
+          !obj:pylearn2.models.mlp.SpaceConverter {
+            layer_name: 'converter',
+            output_space: !obj:pylearn2.space.Conv2DSpace {
+              shape: [10, 10],
+              num_channels: 80,
+              axes: ['c', 0, 1, 'b'],
+            }
+          },
+          !obj:adversarial.deconv.Deconv {
+            #W_lr_scale: .05,
+            #b_lr_scale: .05,
+            num_channels: 3,
+            output_stride: [3, 3],
+            kernel_shape: [5, 5],
+            pad_out: 0,
+            #max_kernel_norm: 1.9365,
+            # init_bias: !obj:pylearn2.models.dbm.init_sigmoid_bias_from_marginals { dataset: *train},
+            layer_name: 'y',
+            irange: .05,
+            tied_b: 0
+          },
+        ],
+
+        input_space: !obj:pylearn2.space.CompositeSpace {
+          components: [
+            !obj:pylearn2.space.VectorSpace {
+              # HACK: No noise!
+              dim: 1
+            },
+            *condition_space,
+          ]
+        },
+#       input_source: ['data', 'condition'],
+        input_source: ['features', 'condition'],
+      },
+
+      noise_dim: 1,
+      input_condition_space: *condition_space,
+    },
+    discriminator:
+      !obj:adversarial.conditional.ConditionalDiscriminator {
+        data_mlp: !obj:pylearn2.models.mlp.MLP {
+          layer_name: 'data_mlp',
+          layers: [
+            !obj:pylearn2.models.maxout.MaxoutConvC01B {
+              layer_name: 'dh0',
+              pad: 4,
+              tied_b: 1,
+              #W_lr_scale: .05,
+              #b_lr_scale: .05,
+              num_channels: 32,
+              num_pieces: 2,
+              kernel_shape: [8, 8],
+              pool_shape: [4, 4],
+              pool_stride: [2, 2],
+              irange: .005,
+              #max_kernel_norm: .9,
+              partial_sum: 33,
+            },
+            !obj:pylearn2.models.maxout.MaxoutConvC01B {
+              layer_name: 'h1',
+              pad: 3,
+              tied_b: 1,
+              #W_lr_scale: .05,
+              #b_lr_scale: .05,
+              num_channels: 32, # 192 ran out of memory
+              num_pieces: 2,
+              kernel_shape: [8, 8],
+              pool_shape: [4, 4],
+              pool_stride: [2, 2],
+              irange: .005,
+              #max_kernel_norm: 1.9365,
+              partial_sum: 15,
+            },
+            !obj:pylearn2.models.maxout.MaxoutConvC01B {
+              pad: 3,
+              layer_name: 'h2',
+              tied_b: 1,
+              #W_lr_scale: .05,
+              #b_lr_scale: .05,
+              num_channels: 192,
+              num_pieces: 2,
+              kernel_shape: [5, 5],
+              pool_shape: [2, 2],
+              pool_stride: [2, 2],
+              irange: .005,
+              #max_kernel_norm: 1.9365,
+            },
+            !obj:pylearn2.models.maxout.Maxout {
+              layer_name: 'h3',
+              irange: .005,
+              num_units: 500,
+              num_pieces: 5,
+              #max_col_norm: 1.9
+            }
+          ]
+        },
+
+        # Identity function
+        condition_mlp: !obj:pylearn2.models.mlp.MLP {
+          layer_name: 'condition_mlp',
+          layers: [
+            !obj:adversarial.util.IdentityLayer {
+              layer_name: 'condition_identity'
+            }
+          ]
+        },
+
+        joint_mlp: !obj:pylearn2.models.mlp.MLP {
+          layer_name: 'joint_mlp',
+#         input_source: ['data', 'condition'],
+          layers: [
+            !obj:pylearn2.models.mlp.Sigmoid {
+              #W_lr_scale: .1,
+              #b_lr_scale: .1,
+              #max_col_norm: 1.9365,
+              layer_name: 'y',
+              dim: 1,
+              irange: .005
+            }
+          ]
+        },
+
+        input_data_space: *data_space,
+        input_condition_space: *condition_space
+      },
+  },
+  algorithm: !obj:pylearn2.training_algorithms.sgd.SGD {
+    batch_size: 128,
+    learning_rate: 0.004,
+    learning_rule: !obj:pylearn2.training_algorithms.learning_rule.Momentum {
+      init_momentum: .5,
+    },
+    monitoring_dataset: {
+      #'train' : *train,
+      'valid' : !obj:adversarial.lfw.dataset.LFW {
+        axes: ['c', 0, 1, 'b'],
+        gcn: 55,
+        lfw_path: '/home/cs13b1042/cgan/pylearn2/adversarial/data/lfwcrop_color/faces32',
+        filelist_path: '/home/cs13b1042/cgan/pylearn2/adversarial/data/lfwcrop_color/filelist.dev.ids.txt',
+        embedding_file: '/home/cs13b1042/cgan/pylearn2/adversarial/data/lfwcrop_color/embeddings/LFW_attributes_50d.npz',
+        img_shape: [3, 32, 32],
+        # which_set: 'train',i
+      }
+      #'test'  : !obj:pylearn2.datasets.cifar10.CIFAR10 {
+      #              which_set: 'test',
+      #              gcn: 55.,
+      #          }
+    },
+    cost: !obj:adversarial.conditional.ConditionalAdversaryCost {
+      condition_distribution: *condition_distribution,
+      scale_grads: 0,
+      #target_scale: .1,
+      discriminator_default_input_include_prob: .5,
+      discriminator_input_include_probs: {
+        'dh0': .8
+      },
+      discriminator_default_input_scale: 2.,
+      discriminator_input_scales: {
+        'dh0': 1.25
+      }
+    },
+    #termination_criterion: !obj:pylearn2.termination_criteria.MonitorBased {
+    #    channel_name: "valid_y_misclass",
+    #    prop_decrease: 0.,
+    #    N: 100
+    #},
+    update_callbacks: !obj:pylearn2.training_algorithms.sgd.ExponentialDecay {
+      decay_factor: 1.000004,
+      min_lr: .000001
+    }
+  },
+  extensions: [
+    #!obj:pylearn2.train_extensions.best_params.MonitorBasedSaveBest {
+    #     channel_name: 'valid_y_misclass',
+    #     save_path: "${PYLEARN2_TRAIN_FILE_FULL_STEM}_best.pkl"
+    #},
+    !obj:pylearn2.training_algorithms.learning_rule.MomentumAdjustor {
+      start: 1,
+      saturate: 250,
+      final_momentum: .7
+    }
+  ],
+
+  save_path: "${PYLEARN2_TRAIN_FILE_FULL_STEM}.pkl",
+  save_freq: 10,
+}

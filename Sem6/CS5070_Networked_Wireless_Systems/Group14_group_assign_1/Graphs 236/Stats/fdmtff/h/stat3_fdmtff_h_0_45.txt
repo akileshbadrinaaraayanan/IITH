@@ -1,0 +1,21 @@
+  Throughput: 1.21934e+06bps
+  Throughput: 1.21922e+06bps
+  Throughput: 1.21775e+06bps
+  Throughput: 1.21873e+06bps
+  Throughput: 1.21946e+06bps
+  Throughput: 1.21775e+06bps
+  Throughput: 1.21946e+06bps
+  Throughput: 1.21934e+06bps
+  Throughput: 1.2191e+06bps
+  Throughput: 1.21763e+06bps
+  Throughput: 1.21898e+06bps
+  Throughput: 1.218e+06bps
+  Throughput: 1.2191e+06bps
+  Throughput: 1.21934e+06bps
+  Throughput: 1.21946e+06bps
+  Throughput: 1.21763e+06bps
+  Throughput: 1.21922e+06bps
+  Throughput: 1.22069e+06bps
+  Throughput: 1.21996e+06bps
+  Throughput: 1.21898e+06bps
+Average throughput= 1.21896e+06 bps

@@ -1,0 +1,41 @@
+This folder contains cs13b1042_assign3.cpp which is the C++ implementation of minimum weight vertex cover using primal dual algorithm.
+Implemented by Akilesh B, CS13B1042
+------------------------------------------------------------------------------------------------------------------------
+How to run?
+
+g++ cs13b1042_assign3.cpp
+./a.out
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Input file is input1.txt specified in line 17 of the program.
+
+Sample input file
+
+4
+5 6 10 1
+0 1 1 0
+1 0 1 0
+1 1 0 1
+0 0 1 0
+
+First line -> No of vertices.
+Second line -> Weight of vertices.
+Followed by Adjacency list.
+
+----------------------------------------------------------------------------------------------------------------------
+
+Sample output
+
+
+vertex cover is 
+1
+2
+4
+
+Adjacency Edges : (1,2)(2,3)(3,4)
+cost is 12
+
+------------------------------------------------------------------------------------------------------------------- 
+
+

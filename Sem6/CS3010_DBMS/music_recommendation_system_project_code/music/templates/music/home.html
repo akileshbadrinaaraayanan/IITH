@@ -1,0 +1,11 @@
+<p>Hi,You have Visited DBMS Project Home Page</p>
+<form action="{% url 'music:login' %}">
+    {% csrf_token %}
+<input type="submit" value="Login">
+</form>
+
+<br><br>
+<form action="{% url 'music:register' %}">
+    <!--{% csrf_token %}-->
+<input type="submit" value="Register">
+</form>

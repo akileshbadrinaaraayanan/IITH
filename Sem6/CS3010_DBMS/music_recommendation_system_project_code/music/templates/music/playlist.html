@@ -1,0 +1,9 @@
+{% if playlistItems %}
+	{% for pli in playlistItems %}
+	<a href="/watch/{{ pli.id }}"><img src="{{ pli.thumbnail_url }}" width="{{ pli.thumbnail_width }}" height="{{ pli.thumbnail_height }}"></a>
+	<p>Title : {{ pli.title }}</p>
+	<p>Description: {{ pli.description }}</p>
+	<p>Channel Ttile : {{ pli.channelTitle }}</p>
+
+	{% endfor %}
+{% endif %}

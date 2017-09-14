@@ -1,0 +1,343 @@
+Waf: Entering directory `/home/akilesh/Downloads/ns-allinone-3.24/ns-3.24/build'
+Waf: Leaving directory `/home/akilesh/Downloads/ns-allinone-3.24/ns-3.24/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (2.296s)
+0.0202143 /NodeList/8/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 1: connected to CellId 1 with RNTI 2
+0.0202143 /NodeList/9/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 2: connected to CellId 1 with RNTI 1
+0.0202143 /NodeList/10/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 3: connected to CellId 1 with RNTI 3
+0.0202143 /NodeList/11/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 4: connected to CellId 2 with RNTI 3
+0.0202143 /NodeList/12/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 5: connected to CellId 2 with RNTI 1
+0.0202143 /NodeList/13/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 6: connected to CellId 2 with RNTI 2
+0.0202143 /NodeList/14/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 7: connected to CellId 3 with RNTI 3
+0.0202143 /NodeList/15/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 8: connected to CellId 3 with RNTI 1
+0.0202143 /NodeList/16/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 9: connected to CellId 3 with RNTI 2
+0.0202143 /NodeList/17/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 10: connected to CellId 4 with RNTI 2
+0.0202143 /NodeList/18/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 11: connected to CellId 4 with RNTI 3
+0.0202143 /NodeList/19/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 12: connected to CellId 4 with RNTI 1
+0.0202143 /NodeList/21/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 14: connected to CellId 5 with RNTI 1
+0.0202143 /NodeList/23/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 16: connected to CellId 6 with RNTI 1
+0.0202143 /NodeList/24/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 17: connected to CellId 6 with RNTI 3
+0.0202143 /NodeList/25/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 18: connected to CellId 6 with RNTI 2
+0.0202143 /NodeList/26/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 19: connected to CellId 7 with RNTI 2
+0.0202143 /NodeList/27/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 20: connected to CellId 7 with RNTI 3
+0.0202143 /NodeList/28/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 21: connected to CellId 7 with RNTI 1
+0.0202143 /NodeList/29/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 22: connected to CellId 8 with RNTI 2
+0.0202143 /NodeList/30/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 23: connected to CellId 8 with RNTI 1
+0.0202143 /NodeList/31/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 24: connected to CellId 8 with RNTI 3
+0.0202143 /NodeList/0/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 1: successful connection of UE with IMSI 1 RNTI 2
+0.0202143 /NodeList/0/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 1: successful connection of UE with IMSI 2 RNTI 1
+0.0202143 /NodeList/0/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 1: successful connection of UE with IMSI 3 RNTI 3
+0.0202143 /NodeList/1/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 2: successful connection of UE with IMSI 4 RNTI 3
+0.0202143 /NodeList/1/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 2: successful connection of UE with IMSI 5 RNTI 1
+0.0202143 /NodeList/1/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 2: successful connection of UE with IMSI 6 RNTI 2
+0.0202143 /NodeList/2/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 3: successful connection of UE with IMSI 7 RNTI 3
+0.0202143 /NodeList/2/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 3: successful connection of UE with IMSI 8 RNTI 1
+0.0202143 /NodeList/2/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 3: successful connection of UE with IMSI 9 RNTI 2
+0.0202143 /NodeList/3/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 4: successful connection of UE with IMSI 10 RNTI 2
+0.0202143 /NodeList/3/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 4: successful connection of UE with IMSI 11 RNTI 3
+0.0202143 /NodeList/3/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 4: successful connection of UE with IMSI 12 RNTI 1
+0.0202143 /NodeList/4/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 5: successful connection of UE with IMSI 14 RNTI 1
+0.0202143 /NodeList/5/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 6: successful connection of UE with IMSI 16 RNTI 1
+0.0202143 /NodeList/5/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 6: successful connection of UE with IMSI 17 RNTI 3
+0.0202143 /NodeList/5/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 6: successful connection of UE with IMSI 18 RNTI 2
+0.0202143 /NodeList/6/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 7: successful connection of UE with IMSI 19 RNTI 2
+0.0202143 /NodeList/6/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 7: successful connection of UE with IMSI 20 RNTI 3
+0.0202143 /NodeList/6/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 7: successful connection of UE with IMSI 21 RNTI 1
+0.0202143 /NodeList/7/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 8: successful connection of UE with IMSI 22 RNTI 2
+0.0202143 /NodeList/7/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 8: successful connection of UE with IMSI 23 RNTI 1
+0.0202143 /NodeList/7/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 8: successful connection of UE with IMSI 24 RNTI 3
+0.0252143 /NodeList/20/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 13: connected to CellId 5 with RNTI 3
+0.0252143 /NodeList/22/DeviceList/0/LteUeRrc/ConnectionEstablished UE IMSI 15: connected to CellId 5 with RNTI 2
+0.0252143 /NodeList/4/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 5: successful connection of UE with IMSI 13 RNTI 3
+0.0252143 /NodeList/4/DeviceList/0/LteEnbRrc/ConnectionEstablished eNB CellId 5: successful connection of UE with IMSI 15 RNTI 2
+UDP
+FlowID: 1 (UDP 1.0.0.2 / 49153 --> 7.0.0.2 / 10001)
+  Tx Bytes: 1526472
+  Rx Bytes: 695240
+  Tx Packets: 999
+  Rx Packets: 455
+  Time LastRxPacket: 9.779s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.544545
+  Throughput: 568762bps
+  Mean{Delay}: 0.0877473
+  Mean{Jitter}: 0.00822198
+UDP
+FlowID: 2 (UDP 1.0.0.2 / 49154 --> 7.0.0.3 / 10002)
+  Tx Bytes: 1526472
+  Rx Bytes: 417144
+  Tx Packets: 999
+  Rx Packets: 273
+  Time LastRxPacket: 9.515s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.726727
+  Throughput: 350725bps
+  Mean{Delay}: 0.0902454
+  Mean{Jitter}: 0.0110989
+UDP
+FlowID: 3 (UDP 1.0.0.2 / 49155 --> 7.0.0.4 / 10003)
+  Tx Bytes: 1526472
+  Rx Bytes: 216976
+  Tx Packets: 999
+  Rx Packets: 142
+  Time LastRxPacket: 9.993s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.857858
+  Throughput: 173702bps
+  Mean{Delay}: 0.0788099
+  Mean{Jitter}: 0.00807042
+UDP
+FlowID: 4 (UDP 1.0.0.2 / 49156 --> 7.0.0.5 / 10004)
+  Tx Bytes: 1526472
+  Rx Bytes: 942776
+  Tx Packets: 999
+  Rx Packets: 617
+  Time LastRxPacket: 8.621s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.382382
+  Throughput: 874865bps
+  Mean{Delay}: 0.0845511
+  Mean{Jitter}: 0.00673258
+UDP
+FlowID: 5 (UDP 1.0.0.2 / 49157 --> 7.0.0.6 / 10005)
+  Tx Bytes: 1526472
+  Rx Bytes: 36672
+  Tx Packets: 999
+  Rx Packets: 24
+  Time LastRxPacket: 0.738s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.975976
+  Throughput: 397528bps
+  Mean{Delay}: 0.119458
+  Mean{Jitter}: 0.021125
+UDP
+FlowID: 6 (UDP 1.0.0.2 / 49158 --> 7.0.0.7 / 10006)
+  Tx Bytes: 1526472
+  Rx Bytes: 58064
+  Tx Packets: 999
+  Rx Packets: 38
+  Time LastRxPacket: 1.178s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.961962
+  Throughput: 394323bps
+  Mean{Delay}: 0.103658
+  Mean{Jitter}: 0.015
+UDP
+FlowID: 7 (UDP 1.0.0.2 / 49159 --> 7.0.0.8 / 10007)
+  Tx Bytes: 1526472
+  Rx Bytes: 573000
+  Tx Packets: 999
+  Rx Packets: 375
+  Time LastRxPacket: 4.547s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.624625
+  Throughput: 1.00814e+06bps
+  Mean{Delay}: 0.0345093
+  Mean{Jitter}: 0.00184533
+UDP
+FlowID: 8 (UDP 1.0.0.2 / 49160 --> 7.0.0.9 / 10008)
+  Tx Bytes: 1526472
+  Rx Bytes: 339216
+  Tx Packets: 999
+  Rx Packets: 222
+  Time LastRxPacket: 6.626s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.777778
+  Throughput: 409558bps
+  Mean{Delay}: 0.0638649
+  Mean{Jitter}: 0.00661712
+UDP
+FlowID: 9 (UDP 1.0.0.2 / 49161 --> 7.0.0.10 / 10009)
+  Tx Bytes: 1526472
+  Rx Bytes: 29032
+  Tx Packets: 999
+  Rx Packets: 19
+  Time LastRxPacket: 9.861s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.980981
+  Throughput: 23553bps
+  Mean{Delay}: 0.159421
+  Mean{Jitter}: 0.0262632
+UDP
+FlowID: 10 (UDP 1.0.0.2 / 49162 --> 7.0.0.11 / 10010)
+  Tx Bytes: 1526472
+  Rx Bytes: 30560
+  Tx Packets: 999
+  Rx Packets: 20
+  Time LastRxPacket: 8.776s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.97998
+  Throughput: 27857.8bps
+  Mean{Delay}: 0.10095
+  Mean{Jitter}: 0.0207
+UDP
+FlowID: 11 (UDP 1.0.0.2 / 49163 --> 7.0.0.12 / 10011)
+  Tx Bytes: 1526472
+  Rx Bytes: 1362976
+  Tx Packets: 999
+  Rx Packets: 892
+  Time LastRxPacket: 9.996s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.107107
+  Throughput: 1.09082e+06bps
+  Mean{Delay}: 0.0456569
+  Mean{Jitter}: 0.00329933
+UDP
+FlowID: 12 (UDP 1.0.0.2 / 49164 --> 7.0.0.13 / 10012)
+  Tx Bytes: 1526472
+  Rx Bytes: 87096
+  Tx Packets: 999
+  Rx Packets: 57
+  Time LastRxPacket: 0.992s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.942943
+  Throughput: 702387bps
+  Mean{Delay}: 0.0457193
+  Mean{Jitter}: 0.0087193
+UDP
+FlowID: 13 (UDP 1.0.0.2 / 49165 --> 7.0.0.14 / 10013)
+  Tx Bytes: 1526472
+  Rx Bytes: 658568
+  Tx Packets: 999
+  Rx Packets: 431
+  Time LastRxPacket: 9.999s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.568569
+  Throughput: 526907bps
+  Mean{Delay}: 0.0651787
+  Mean{Jitter}: 0.00467285
+UDP
+FlowID: 14 (UDP 1.0.0.2 / 49166 --> 7.0.0.15 / 10014)
+  Tx Bytes: 1526472
+  Rx Bytes: 573000
+  Tx Packets: 999
+  Rx Packets: 375
+  Time LastRxPacket: 4.578s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.624625
+  Throughput: 1.00131e+06bps
+  Mean{Delay}: 0.0368373
+  Mean{Jitter}: 0.00169333
+UDP
+FlowID: 15 (UDP 1.0.0.2 / 49167 --> 7.0.0.16 / 10015)
+  Tx Bytes: 1526472
+  Rx Bytes: 1162808
+  Tx Packets: 999
+  Rx Packets: 761
+  Time LastRxPacket: 9.995s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.238238
+  Throughput: 930712bps
+  Mean{Delay}: 0.059544
+  Mean{Jitter}: 0.00434823
+UDP
+FlowID: 16 (UDP 1.0.0.2 / 49168 --> 7.0.0.17 / 10016)
+  Tx Bytes: 1526472
+  Rx Bytes: 391168
+  Tx Packets: 999
+  Rx Packets: 256
+  Time LastRxPacket: 9.891s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.743744
+  Throughput: 316383bps
+  Mean{Delay}: 0.0525039
+  Mean{Jitter}: 0.00494922
+UDP
+FlowID: 17 (UDP 1.0.0.2 / 49169 --> 7.0.0.18 / 10017)
+  Tx Bytes: 1526472
+  Rx Bytes: 841928
+  Tx Packets: 999
+  Rx Packets: 551
+  Time LastRxPacket: 7.542s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.448448
+  Throughput: 893055bps
+  Mean{Delay}: 0.0486534
+  Mean{Jitter}: 0.00358439
+UDP
+FlowID: 18 (UDP 1.0.0.2 / 49170 --> 7.0.0.19 / 10018)
+  Tx Bytes: 1526472
+  Rx Bytes: 308656
+  Tx Packets: 999
+  Rx Packets: 202
+  Time LastRxPacket: 3.176s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.797798
+  Throughput: 777471bps
+  Mean{Delay}: 0.0671782
+  Mean{Jitter}: 0.0079604
+UDP
+FlowID: 19 (UDP 1.0.0.2 / 49171 --> 7.0.0.20 / 10019)
+  Tx Bytes: 1526472
+  Rx Bytes: 51952
+  Tx Packets: 999
+  Rx Packets: 34
+  Time LastRxPacket: 0.938s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.965966
+  Throughput: 443087bps
+  Mean{Delay}: 0.120647
+  Mean{Jitter}: 0.018
+UDP
+FlowID: 20 (UDP 1.0.0.2 / 49172 --> 7.0.0.21 / 10020)
+  Tx Bytes: 1526472
+  Rx Bytes: 33616
+  Tx Packets: 999
+  Rx Packets: 22
+  Time LastRxPacket: 0.921s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.977978
+  Throughput: 291996bps
+  Mean{Delay}: 0.1335
+  Mean{Jitter}: 0.0152273
+UDP
+FlowID: 21 (UDP 1.0.0.2 / 49173 --> 7.0.0.22 / 10021)
+  Tx Bytes: 1526472
+  Rx Bytes: 377416
+  Tx Packets: 999
+  Rx Packets: 247
+  Time LastRxPacket: 3.064s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.752753
+  Throughput: 985420bps
+  Mean{Delay}: 0.0349352
+  Mean{Jitter}: 0.00333198
+UDP
+FlowID: 22 (UDP 1.0.0.2 / 49174 --> 7.0.0.23 / 10022)
+  Tx Bytes: 1526472
+  Rx Bytes: 1248376
+  Tx Packets: 999
+  Rx Packets: 817
+  Time LastRxPacket: 9.995s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.182182
+  Throughput: 999200bps
+  Mean{Delay}: 0.0697283
+  Mean{Jitter}: 0.00478703
+UDP
+FlowID: 23 (UDP 1.0.0.2 / 49175 --> 7.0.0.24 / 10023)
+  Tx Bytes: 1526472
+  Rx Bytes: 738024
+  Tx Packets: 999
+  Rx Packets: 483
+  Time LastRxPacket: 5.149s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.516517
+  Throughput: 1.14667e+06bps
+  Mean{Delay}: 0.0219172
+  Mean{Jitter}: 0.000865424
+UDP
+FlowID: 24 (UDP 1.0.0.2 / 49176 --> 7.0.0.25 / 10024)
+  Tx Bytes: 1526472
+  Rx Bytes: 30560
+  Tx Packets: 999
+  Rx Packets: 20
+  Time LastRxPacket: 0.651s
+  Lost Packets: 0
+  Pkt Lost Ratio: 0.97998
+  Throughput: 375545bps
+  Mean{Delay}: 0.1319
+  Mean{Jitter}: 0.01935
+100	10	ns3::PfFfMacScheduler	ns3::NoOpHandoverAlgorithm	
+1	1
+Average throughput= 612915 bps

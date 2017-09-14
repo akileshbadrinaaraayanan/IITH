@@ -1,0 +1,51 @@
+----------------------------------------------------------------------------------------------
+README for Bilinear CNN models for fine-grained visual recognition
+Written by Akilesh B, CS13B1042
+------------------------------------------------------------------------------------------------
+The implementation is MATLAB based and depends on VLFEAT and MatConvNet. I installed
+matconvnet-1.0-beta8 and vlfeat-0.9.20. After installing, I have to configure MatConvNet. For
+this purpose, I made setup.m as shown below.
+
+run ../vlfeat−0.9.20/toolbox/vlsetup
+run ../matconvnet −1.0− beta8/matlab/vlsetupnn
+addpath ../matconvnet−1.0−beta8/examples
+clear mex ;
+
+
+Fine-grained datasets
+To run experiments download the datasets from various places and edit the model setup.m file
+to point it to the location of each dataset. For instance, you can point to the birds dataset
+directory by setting opts.cubDir = ’data/cub’.
+
+
+The implementation for B-CNN can be done by using the following MATLAB functions:
+1. vl bilinearnn(): This extends vl simplenn() of the MatConvNet library to include the
+bilinear layers.
+2. vl nnbilinearpool(): Bilinear feature pooling of outer product with itself.
+13. vl nnbilinearclpool(): Bilinear feature pooling with outer product of two different features
+(same resolution of two feature outputs).
+4. vl nnsqrt(): Signed square-root normalization
+5. vl nnl2norm(): L2 normalization
+
+Fine tuning B-CNN models
+The script run experiments bcnn train.m is for fine-tuning a B-CNN model. Note that this
+code caches all the intermediate results during fine-tuning which takes about 200GB disk space.
+Here are the steps to fine-tuning a B-CNN [M,M] model on the CUB dataset:
+1. Download CUB-200-2011 dataset.
+2. Edit opts.cubDir=CUBROOT in model setup.m, CUBROOT is the location of CUB
+dataset.
+3. Download imagenet-vgg-m model.
+4. Set the path of the model in run experiments bcnn train.m. For example, set PRETRAINMODEL=’dat
+vgg-m.mat’, to use the Oxford’s VGG-M model trained on ImageNet LSVRC 2012 dataset.
+5. The option shareWeight=true in bcnnmm.opts implies that the blinear model uses the
+same CNN to extract both features resulting in a symmetric model. For assymetric models
+set shareWeight=false. Note that this roughly doubles the GPU memory requirement.
+6. Once the fine-tuning is complete, you can train a linear SVM on the extracted features
+to evaluate the model. The script run experiments.m for training/testing using SVMs.
+You can simply set the MODELPATH to the location of the fine-tuned model by setting
+MODELPATH=’data/ft-models/bcnn-cub-mm.mat’
+7. Finally run the script run experiments.m from the MATLAB command line. The results
+with be saved in the opts.resultPath.
+
+
+

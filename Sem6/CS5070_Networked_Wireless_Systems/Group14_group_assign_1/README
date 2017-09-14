@@ -1,0 +1,69 @@
+Group assignment 1     -  	 Group 14: Arjun V Anand, CS13B1041 and Akilesh B, CS13B1042
+--------------------------------------------------------------------------------------------------------------
+
+This assignment contains 6 parts:
+
+Graph 1:
+
+This the REM Plot. Run the Group14-Asg1-rem.cc (./waf --run scratch/Group14-Asg1-rem ) file to generate rem.out file. Now, this can be plotted using the remplot.pl GNU script  -   gnuplot remplot.pl 
+This will generate Rem.png which is the Radio Environment Map for the given scenario.
+
+
+Graph 4:
+
+ ./waf --run "scratch/Group14-Asg1 --schedType=ns3::FdMtFfMacScheduler --interPacketInterval=1 --speed=0.0"
+
+UE mobility speed = 0 m/s. InterpacketInterval = 1s, this means that it is full buffer scenario. Just the scheduler type has to be changed in each run.
+
+For each scheduler we get, DlRlcStats.txt and DlRsrpSinrStats.txt.
+
+Since, we need to plot the SINR and Throughput values only for UE 0, we have to parse these stat files.
+
+awk '$3==1' DlRsrpSinrStats.txt > sinr.txt     (For getting SINR stats where IMEI = 1 ie for UE 0).
+awk '$4==1' DlRlcStats.txt > filter_throughput.txt ( For getting Throughput stats where IMEI = 1 ie for UE 0).
+awk '{ print $2, $10 * 0.000032}' filter_throughput.txt > throughput.txt   
+
+In order to plot the graphs, plot_sinr.pl and plot_throughput.pl are used 
+gnuplot plot_sinr.pl, generates the SINR plot for all the 4 schedulers.
+gnuplot plot_throughput.pl, generates the throughput plot for all the 4 schedulers.
+
+
+Graph 5:
+
+ ./waf --run "scratch/Group14-Asg1 --schedType=ns3::FdMtFfMacScheduler --interPacketInterval=1 --speed=5.0"
+
+UE mobility speed = 5 m/s. InterpacketInterval = 1s, this means that it is full buffer scenario. Just the scheduler type has to be changed in each run.
+
+For each scheduler we get, DlRlcStats.txt and DlRsrpSinrStats.txt.
+
+Since, we need to plot the SINR and Throughput values only for UE 0, we have to parse these stat files.
+
+awk '$3==1' DlRsrpSinrStats.txt > sinr.txt     (For getting SINR stats where IMEI = 1 ie for UE 0).
+awk '$4==1' DlRlcStats.txt > filter_throughput.txt ( For getting Throughput stats where IMEI = 1 ie for UE 0).
+awk '{ print $2, $10 * 0.000032}' filter_throughput.txt > throughput.txt   
+
+In order to plot the graphs, plot_sinr.pl and plot_throughput.pl are used. 
+gnuplot plot_sinr.pl, generates the SINR plot for all the 4 schedulers.
+gnuplot plot_throughput.pl, generates the throughput plot for all the 4 schedulers.
+
+
+Graphs 2, 3, 6
+
+Stats folder present in it, contains the stats we obtained for different scheduler algorithms for both half buffer and full buffer mode. 
+
+For eg: Stats/fdbetff/f/ contains a file fdbetff_f_5_42.txt  . This is the output of the ns3 program when the scheduler is Blind Average Throughput under full buffer condition when RngRun is 42 and UE mobility speed is 5 m/s.
+
+Similarly all the stats are present in corresponding folder for schedulers and buffer modes. 
+
+script.py is a script we wrote for getting the throughput for 20 UEs separately from the text file. We get the throughput values for all the 20 UEs individually for different RngRuns. We then average the throughput across different RngRuns.
+
+run_tests.py is the script we wrote for getting all the results at once. That is, for different schedulers, for different UE mobility speeds, for half buffer and full buffer as well as for 5 different RngRuns. The output of each run is saved in a text file as <sched-type>_<buffer-mode>_<UE speed>_<RngRun> ie fdbetff_f_5_42.txt
+It considers four schedulers (PF, RR, MT, BATS) as given in the question, two different speeds (0,5) ms, full buffer/ half buffer case and it runs all the simulations five times for seed values(RngRun) between 42 and 4
+
+The different GNU plot scripts as well as .dat files we used for plotting 2 and 6 is present inside folder plots 2-6 
+
+The different GNU plot scripts as well as .dat files we used for plotting 3 is present inside folder plot 3
+
+
+
+
