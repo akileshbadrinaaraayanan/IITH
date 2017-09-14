@@ -1,0 +1,37 @@
+This folder contains the following:
+
+All required source code.
+Screen shots on testing part 1
+index.html, test.html, test1.html, test2.html, test3.html, test4.html which are html files 
+
+
+How to run this program?
+
+Server part contains - Main.java, ConnectionHandler.java, HttpRequest.java, HttpResponse.java
+
+Client part - Httpclient.java
+
+1) First compile all the java files:
+
+javac Main.java, javac ConnectionHandler.java, javac HttpRequest.java, javac HttpResponse.java, javac Httpclient.java
+
+
+2) Then run the server in one terminal: java Main <port> 
+For eg: java Main 9876
+Main.java is the main class of Server. It takes in port number as argument. Here, 9876 is the port number.
+
+To test part 1: Go to browser and give localhost:9876/index.html
+
+Browser sends the GET request to my server and the contents of the requested page is displayed in the browser.
+index.html contains links to 5 other pages as shown in the screen shot. Each of them when clicked redirects to a new page.
+
+To test part 2
+
+The client program is Httpclient.java
+
+Run the client: java Httpclient <host> <port> <file>
+
+For eg: java Httpclient 172.16.3.242 9876 /index.html
+
+Client takes in three arguments: IP Address of host, port number and the requested file.
+

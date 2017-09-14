@@ -1,0 +1,14 @@
+----------------------------------------------------
+This folder contains
+
+1) Assn9-cs13b1042.c
+2) Report.pdf
+
+-----------------------------------------------------
+How to run?
+
+gcc Assn9-cs13b1042.c -lpthread -lm
+./a.out input.txt
+
+--------------------------------------------------------
+Report contains the results obtained as per the experiments given in the question

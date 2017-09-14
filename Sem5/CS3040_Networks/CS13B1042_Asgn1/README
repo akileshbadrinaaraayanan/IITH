@@ -1,0 +1,11 @@
+The tunable parameters AVERAGE_DELAY and LOSS_RATE can be specified as mentioned in the protocol design document.
+
+RandomGaussian.java is needed because AVERAGE_DELAY is random gaussian distribution.
+
+How to run?
+
+First, compile UDPServer.java, UDPClient.java, RandomGaussian.java (javac UDPServer.java , javac UDPClient.java, javac RandomGaussian.java)
+
+Next run UDPServer.java (java UDPServer 2222) in one tab, then run UDPClient.java (java UDPClient 2222) in another tab. Here 2222 is the port number which is specified as a command line argument. IP Address is localhost which is specified in the code.
+
+Ping statistics will be obtained at the client.

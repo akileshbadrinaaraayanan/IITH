@@ -1,0 +1,25 @@
+------------------------------------------------------------------------
+This folder contains:
+
+1) Bounded-CS13B1042.c 
+2) Unbounded-CS13B1042.c
+3) inp-params.txt
+4) Report.pdf
+
+-------------------------------------------------------------------------
+How to run?
+
+gcc Bounded-CS13B1042.c -lpthread
+./a.out input.txt
+
+gcc Unbounded-CS13B1042.c -lpthread
+./a.out	imput.txt
+
+-------------------------------------------------------------------------
+input.txt has 4 values: n, k, lambda1, lambda2
+-------------------------------------------------------------------------
+Report contains the results obtained as per the experiments given in the question.
+
+
+
+

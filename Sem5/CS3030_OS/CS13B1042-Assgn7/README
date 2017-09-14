@@ -1,0 +1,25 @@
+This folder contains:
+
+1) CS13B1042-Assgn7.c (maxloops set to 10 and loopcount set to 100000)
+2) input.txt
+3) Report
+4) input.txt
+5) longrun.c (given in the question)
+
+How to run?
+
+First run longrun => gcc -o long longrun.c
+Then run 1) => gcc CS13B1042-assgn7.c
+
+Now run: ./a.out
+
+Report contains the results for the test cases
+
+Changes made in longrun.c
+
+Include stdlib header => #include <stdlib.h>
+In line 35 of longrun.c => in the print statement instead of argv[2] use loopCount as it expects %d (an integer).
+
+
+
+

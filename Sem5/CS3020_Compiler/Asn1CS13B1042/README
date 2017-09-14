@@ -1,0 +1,28 @@
+README - Written by Akilesh B, CS13B1042
+
+This folder contains stack.cl and atoi.cl. It also contains a report how I implemented Stack Machine.
+
+stack.cl is the actual implementation of Stack Machine.
+
+How to run?
+
+coolc stack.cl atoi.cl
+sudo spim stack.s
+
+Sample execution:
+
+>1
+>+
+>2
+>s
+d
+s
+2
++
+1
+>e
+>e
+>d
+3
+>x
+COOL program successfully executed.

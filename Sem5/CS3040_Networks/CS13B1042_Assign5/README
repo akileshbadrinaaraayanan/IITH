@@ -1,0 +1,25 @@
+---------------------------------------------------------------------------------------
+		Written by Akilesh B, CS13B1042
+----------------------------------------------------------------------------------------
+This folder contains two protocols:
+
+1) Alternating Bit protocol and GoBackN protocol
+
+Method for running Alternating bit:
+
+javac *.java
+
+java FileReceiver <port> <filename>
+
+java FileSender <filename> <hostname> <port>
+
+----------------------------------------------------------------------------------------
+Method for running GoBackN protocol
+
+javac *.java
+
+java Receiver
+
+java Sender
+
+-----------------------------------------------------------------------------------------

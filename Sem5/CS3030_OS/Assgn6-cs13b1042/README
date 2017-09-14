@@ -1,0 +1,10 @@
+This folder contains multi process sorting (SortProcess.c) and multi thread sorting (SortThread.c)
+This takes input n from the user, randomly generates elements of the array and sorts it.
+
+gcc SortProcess.c and ./a.out for compiling and running SortProcess.c
+
+gcc SortThread.c -lpthread and ./a.out for compiling and running SortThread.c
+
+It also contains the Report which explains in detail how I accomplished this task along with the necessary comparison. 
+
+process_comparison.c and thread_comparison.c are for obtaining the time taken as input size of unsorted array varies from 100 to 1000 in intervals of 50.

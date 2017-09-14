@@ -1,0 +1,28 @@
+The Scheduling algorithm which has minimum waiting time is considered efficient.
+
+Total of 10 processes
+
+Case 1:
+Equal number of I/O and CPU bound processes (5 : 5)
+
+The difference in avg waiting time among the three scheduling algorithms is not that significant with MLFQ being marginally better than default and Priority being the worst.
+
+Case 2: 7 I/O, 3 CPU
+
+There is no significant difference in avg waiting time between MLFQ and Priority with MLFQ being marginally better.
+
+Default performs the worst with avg waiting time being almost double that of other two. 
+
+Case 3: 3 I/O and 7 CPU
+
+Priority performs the best while default is the worst although there is not much difference in waiting time between Priority and MLFQ.
+
+Case 4: Purely I/O (10 I/O)
+
+MLFQ performs the best although difference in waiting time between MLFQ and Default is not significant. Priority performs the worst.
+
+Avg turnaround time for Default is way lesser than the other two.
+
+Case 5: Purely CPU (10 CPU)
+
+MLFQ performs the best and Priority the worst. The difference in waiting time among Priority and default is negligible. 

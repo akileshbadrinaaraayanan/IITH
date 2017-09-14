@@ -1,0 +1,27 @@
+nslookup Implementation in java by Akilesh B, CS13B1042
+
+This folder contains:
+
+NSLookup.java, DNS.java, DNSQuery.java, DNSInputStream.java, DNSRR.java, Address.java, MailExchanger.java, NameServer.java, CanonicalName.java, StartofAuthority.java
+
+How to execute the program?
+
+First compile all the java files: javac *.java
+
+NSLookup is the main java file which needs to be run. It takes in two arguments
+java NSLookup "-type=<option> <host>" <nameserver>
+
+We can find out the local name server by vim /etc/resolv.conf
+
+To run default without any options just give: java NSLookup "google.com" 127.0.1.1 This is equivalent to nslookup google.com
+
+We give 5 options apart from default nslookup google.com
+
+1) Mail Exchange (mx)
+2) Name Server (ns)
+3) Canonical Name (cname)
+4) StartofAuthority (soa)
+5) Address (a)
+
+java NSLookup "-type=ns google.com" 127.0.1.1 This is equivalent to nslookup -type=ns google.com
+java NSLookup "-type=mx google.com" 127.0.1.1 This is equivalent to nslookup -type=mx google.com

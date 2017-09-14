@@ -1,0 +1,6 @@
+How to compile and run?
+
+g++ cs13b1042_assign10.cpp -lpthread
+./a.out input.txt
+
+--------------------------------------------------

@@ -1,0 +1,23 @@
+This folder contains: ProxyServer.java, ProxyClient.java
+
+1) First compile both java files:- 
+javac ProxyServer.java 
+javac ProxyClient.java
+
+2) Now run ProxyServer.java
+
+This takes in 3 arguments: i) port number on which proxy server is running, ii) max cache size, iii) address of the nameserver
+
+To run: java ProxyServer <port> <max_cache_size> <nameserver>
+
+Eg: java ProxyServer 9876 10 127.0.1.1
+
+The nameserver can be found out by : cat /etc/resolv.conf
+
+We specify max cache size as cache can contain only these many entries. If we get a new entry, the oldest entry in the cache will be deleted and the latest one will be stored.  
+
+Now, from the terminal give nslookup command
+
+Eg: nslookup -port=9876 google.com localhost
+
+We get the response at the terminal.
